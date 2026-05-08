@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node server.js)",
+      "Bash(curl -s http://localhost:3000/api/posts)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill *)",
+      "Bash(awk '{print $5}')",
+      "Bash(xargs -I{} taskkill //PID {} //F)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s http://localhost:3000/api/mapdata)"
+    ]
+  }
+}

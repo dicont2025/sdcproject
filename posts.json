@@ -1,0 +1,18 @@
+[
+  {
+    "id": "0f52354c-1aaf-4d45-905d-12bb2636c7f6",
+    "author": "김민정",
+    "pw": "$2a$10$z0qx8VSLhIm5RSFOoNhHs.vTyBVTK7ZXSULk9ekBELTGaqSyZSn/a",
+    "body": "테스트",
+    "createdAt": "2026-05-07T08:00:38.335Z",
+    "updatedAt": "2026-05-07T08:00:38.335Z",
+    "comments": [
+      {
+        "id": "45e61ffa-85e4-4201-8962-85cd618cb7d7",
+        "author": "김민정1",
+        "body": "테스트댓글",
+        "createdAt": "2026-05-07T08:00:47.880Z"
+      }
+    ]
+  }
+]
