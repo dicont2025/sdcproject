@@ -280,7 +280,7 @@ textarea.fi { resize: vertical; min-height: 80px; }
 
 </main>
 
-<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=220b3c4d0d3d7a0339d6a608e494a10a&libraries=clusterer&autoload=false"></script>
+<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=220b3c4d0d3d7a0339d6a608e494a10a&libraries=clusterer"></script>
 <script>
 /* ── 날짜 ── */
 document.getElementById('nav-date').textContent =
@@ -307,7 +307,6 @@ async function init() {
   const nn = allSchools.filter(s => s.week === 'next').length;
   document.getElementById('badge-this').textContent = `● 이번주 ${tn}`;
   document.getElementById('badge-next').textContent = `● 다음주 ${nn}`;
-  await new Promise(resolve => kakao.maps.load(resolve));
   initMap();
   renderList();
 }
