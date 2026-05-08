@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDC 관리자</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Malgun Gothic', sans-serif; background: #f1f5f9; color: #1e293b; min-height: 100vh; }
+
+#login-screen {
+  position: fixed; inset: 0; background: #1e3a8a;
+  display: flex; align-items: center; justify-content: center; z-index: 999;
+}
+.login-box {
+  background: white; border-radius: 16px; padding: 40px 36px;
+  width: 320px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,.3);
+}
+.login-box h1 { font-size: 20px; font-weight: 800; color: #1e3a8a; margin-bottom: 6px; }
+.login-box p { font-size: 13px; color: #64748b; margin-bottom: 24px; }
+.login-box input {
+  width: 100%; padding: 10px 14px; border: 1.5px solid #e2e8f0;
+  border-radius: 8px; font-size: 15px; margin-bottom: 12px; outline: none; text-align: center; letter-spacing: 2px;
+}
+.login-box input:focus { border-color: #1e3a8a; }
+.login-box .btn-login {
+  width: 100%; padding: 11px; background: #1e3a8a; color: white;
+  border: none; border-radius: 8px; font-size: 15px; cursor: pointer; font-weight: 700;
+}
+.login-box .btn-login:hover { background: #1e40af; }
+.login-err { color: #dc2626; font-size: 13px; margin-top: 10px; min-height: 18px; }
+
+#admin-main { display: none; }
+
+.top-bar {
+  background: white; border-bottom: 2px solid #1e3a8a;
+  padding: 10px 24px; display: flex; align-items: center; gap: 10px;
+  position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.top-bar h1 { font-size: 16px; font-weight: 800; color: #1e3a8a; }
+.top-bar .spacer { flex: 1; }
+.btn { padding: 7px 13px; border-radius: 7px; border: none; cursor: pointer; font-size: 12px; font-weight: 700; }
+.btn-export { background: #eff6ff; color: #1d4ed8; }
+.btn-export:hover { background: #dbeafe; }
+.btn-logout { background: #f1f5f9; color: #64748b; }
+.btn-logout:hover { background: #e2e8f0; }
+
+.content { padding: 18px 24px; max-width: 1100px; margin: 0 auto; }
+
+.add-card {
+  background: white; border-radius: 12px; padding: 18px 20px;
+  margin-bottom: 16px; border: 1.5px solid #e2e8f0;
+}
+.add-card h2 { font-size: 14px; font-weight: 700; color: #1e3a8a; margin-bottom: 14px; }
+.form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin-bottom: 14px; }
+.fg label { display: block; font-size: 11px; color: #64748b; margin-bottom: 3px; font-weight: 700; }
+.fg input, .fg select {
+  width: 100%; padding: 7px 9px; border: 1.5px solid #e2e8f0;
+  border-radius: 6px; font-size: 13px; outline: none;
+}
+.fg input:focus, .fg select:focus { border-color: #1e3a8a; }
+.btn-add { padding: 8px 16px; background: #15803d; color: white; border: none; border-radius: 7px; font-size: 13px; font-weight: 700; cursor: pointer; }
+.btn-add:hover { background: #166534; }
+#add-msg { margin-left: 10px; font-size: 13px; color: #15803d; font-weight: 600; }
+
+.tbl-card { background: white; border-radius: 12px; overflow: hidden; border: 1.5px solid #e2e8f0; }
+.tbl-top { padding: 12px 16px; display: flex; gap: 8px; align-items: center; border-bottom: 1px solid #f1f5f9; }
+.tbl-top input {
+  flex: 1; padding: 7px 11px; border: 1.5px solid #e2e8f0;
+  border-radius: 7px; font-size: 13px; outline: none;
+}
+.tbl-top input:focus { border-color: #1e3a8a; }
+.tbl-top select { padding: 7px 9px; border: 1.5px solid #e2e8f0; border-radius: 7px; font-size: 12px; outline: none; }
+.cnt { font-size: 12px; color: #94a3b8; white-space: nowrap; }
+
+table { width: 100%; border-collapse: collapse; }
+th { background: #f8fafc; padding: 9px 12px; text-align: left; font-size: 11px; font-weight: 700; color: #475569; border-bottom: 1px solid #e2e8f0; white-space: nowrap; }
+td { padding: 9px 12px; border-bottom: 1px solid #f8fafc; font-size: 13px; vertical-align: middle; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafafa; }
+
+.badge { display: inline-block; padding: 2px 7px; border-radius: 20px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.b-gangnam { background: #eff6ff; color: #1d4ed8; }
+.b-bangwha { background: #f3e8ff; color: #7e22ce; }
+
+.week-btn {
+  padding: 4px 9px; border-radius: 6px; font-size: 11px; font-weight: 700;
+  cursor: pointer; border: 1.5px solid; background: transparent; white-space: nowrap;
+}
+.week-btn.this { color: #15803d; border-color: #15803d; }
+.week-btn.this:hover { background: #dcfce7; }
+.week-btn.next { color: #b45309; border-color: #b45309; }
+.week-btn.next:hover { background: #ffedd5; }
+
+.t-wrap { display: flex; gap: 5px; align-items: center; }
+.t-inp { padding: 5px 7px; border: 1.5px solid #e2e8f0; border-radius: 5px; font-size: 12px; width: 85px; outline: none; }
+.t-inp:focus { border-color: #1e3a8a; }
+.t-save { padding: 4px 8px; border-radius: 5px; border: none; background: #1e3a8a; color: white; font-size: 11px; cursor: pointer; white-space: nowrap; }
+.t-save:hover { background: #1e40af; }
+.t-save:disabled { background: #15803d; cursor: default; }
+.t-del { padding: 4px 8px; border-radius: 5px; border: none; background: #fee2e2; color: #dc2626; font-size: 11px; cursor: pointer; }
+.t-del:hover { background: #dc2626; color: white; }
+
+.empty { text-align: center; padding: 40px; color: #94a3b8; font-size: 14px; }
+
+.warn-bar { background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 10px 14px; margin-bottom: 14px; font-size: 12px; color: #92400e; }
+</style>
+</head>
+<body>
+
+<div id="login-screen">
+  <div class="login-box">
+    <h1>🔐 관리자</h1>
+    <p>SDC 학교 방문 관리 시스템</p>
+    <input type="password" id="pw-inp" placeholder="비밀번호 입력" />
+    <button class="btn-login" id="login-btn">로그인</button>
+    <div class="login-err" id="login-err"></div>
+  </div>
+</div>
+
+<div id="admin-main">
+  <div class="top-bar">
+    <h1>SDC 관리자</h1>
+    <span class="spacer"></span>
+    <button class="btn btn-export" id="export-btn">📥 JSON 내보내기</button>
+    <button class="btn btn-logout" id="logout-btn">로그아웃</button>
+  </div>
+
+  <div class="content">
+    <div class="warn-bar">⚠️ Render 무료 서버는 15분 비활성 시 재시작되면 변경사항이 초기화됩니다. 중요한 수정 후 <strong>JSON 내보내기</strong>로 백업하세요.</div>
+
+    <div class="add-card">
+      <h2>➕ 학교 추가</h2>
+      <div class="form-grid">
+        <div class="fg"><label>학교명 *</label><input id="a-name" placeholder="예: 서울중학교" /></div>
+        <div class="fg"><label>주소</label><input id="a-addr" placeholder="예: 서울특별시 강남구..." /></div>
+        <div class="fg"><label>담당 선생님</label><input id="a-teacher" placeholder="예: 홍길동" /></div>
+        <div class="fg"><label>위도</label><input id="a-lat" type="number" step="any" placeholder="예: 37.5" /></div>
+        <div class="fg"><label>경도</label><input id="a-lon" type="number" step="any" placeholder="예: 127.0" /></div>
+        <div class="fg"><label>유형 *</label><select id="a-type"><option value="gangnam">강남</option><option value="bangwha">방화</option></select></div>
+        <div class="fg"><label>구분 *</label><select id="a-week"><option value="this">이번주</option><option value="next">다음주</option></select></div>
+        <div class="fg"><label>그룹</label><input id="a-group" placeholder="예: A" /></div>
+        <div class="fg"><label>지역</label><input id="a-region" placeholder="예: 서울_강남" /></div>
+      </div>
+      <button class="btn-add" id="add-btn">추가</button>
+      <span id="add-msg"></span>
+    </div>
+
+    <div class="tbl-card">
+      <div class="tbl-top">
+        <input id="search" placeholder="🔍 학교명 또는 담당자 검색..." />
+        <select id="filt-week">
+          <option value="all">전체</option>
+          <option value="this">이번주</option>
+          <option value="next">다음주</option>
+        </select>
+        <select id="filt-type">
+          <option value="all">강남+방화</option>
+          <option value="gangnam">강남</option>
+          <option value="bangwha">방화</option>
+        </select>
+        <span class="cnt" id="cnt"></span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>학교명</th>
+            <th>유형</th>
+            <th>구분</th>
+            <th>담당 선생님</th>
+            <th>삭제</th>
+          </tr>
+        </thead>
+        <tbody id="tbl-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+let token = sessionStorage.getItem('admin-token') || '';
+let allSchools = [];
+
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Login ──
+document.getElementById('pw-inp').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+document.getElementById('login-btn').addEventListener('click', doLogin);
+
+async function doLogin() {
+  const pw = document.getElementById('pw-inp').value;
+  const r = await fetch('/api/admin/login', {
+    method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ password: pw })
+  });
+  if (r.ok) { token = pw; sessionStorage.setItem('admin-token', pw); loadData(); }
+  else document.getElementById('login-err').textContent = '비밀번호가 틀렸습니다.';
+}
+
+document.getElementById('logout-btn').addEventListener('click', () => {
+  sessionStorage.removeItem('admin-token'); location.reload();
+});
+
+// ── Data ──
+async function loadData() {
+  const [mapData, teachers] = await Promise.all([
+    fetch('/api/mapdata').then(r => r.json()),
+    fetch('/api/nextweek-teachers').then(r => r.json())
+  ]);
+  allSchools = [
+    ...mapData.this_week_gangnam.map(s => ({...s, week:'this'})),
+    ...mapData.this_week_bangwha.map(s => ({...s, week:'this'})),
+    ...mapData.unvisited_gangnam.map(s => ({...s, week:'next', teacher: teachers[s.name] || s.teacher || ''})),
+    ...mapData.unvisited_bangwha.map(s => ({...s, week:'next', teacher: teachers[s.name] || s.teacher || ''})),
+  ];
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('admin-main').style.display = 'block';
+  render();
+}
+
+if (token) loadData();
+
+// ── Render table ──
+function render() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const fw = document.getElementById('filt-week').value;
+  const ft = document.getElementById('filt-type').value;
+
+  const list = allSchools.filter(s => {
+    if (fw !== 'all' && s.week !== fw) return false;
+    if (ft !== 'all' && s.type !== ft) return false;
+    if (q && !s.name.toLowerCase().includes(q) && !(s.teacher||'').toLowerCase().includes(q)) return false;
+    return true;
+  });
+
+  document.getElementById('cnt').textContent = `${list.length}개`;
+  const tbody = document.getElementById('tbl-body');
+
+  if (!list.length) {
+    tbody.innerHTML = `<tr><td colspan="5" class="empty">검색 결과가 없습니다.</td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = list.map((s, i) => `
+    <tr>
+      <td>
+        <strong>${esc(s.name)}</strong>
+        ${s.addr ? `<br><span style="color:#94a3b8;font-size:11px">${esc(s.addr.replace('서울특별시 ','').substring(0,25))}</span>` : ''}
+      </td>
+      <td><span class="badge ${s.type==='gangnam' ? 'b-gangnam' : 'b-bangwha'}">${s.type==='gangnam' ? '강남' : '방화'}</span></td>
+      <td><button class="week-btn ${s.week}" data-name="${esc(s.name)}" data-week="${s.week}">${s.week==='this' ? '● 이번주' : '○ 다음주'}</button></td>
+      <td>
+        <div class="t-wrap">
+          <input class="t-inp" value="${esc(s.teacher||'')}" placeholder="미지정" data-name="${esc(s.name)}" data-week="${s.week}" />
+          <button class="t-save" data-name="${esc(s.name)}" data-week="${s.week}">저장</button>
+        </div>
+      </td>
+      <td><button class="t-del" data-name="${esc(s.name)}">삭제</button></td>
+    </tr>
+  `).join('');
+}
+
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('filt-week').addEventListener('change', render);
+document.getElementById('filt-type').addEventListener('change', render);
+
+// ── Event delegation ──
+document.getElementById('tbl-body').addEventListener('click', async e => {
+  if (e.target.classList.contains('week-btn')) {
+    const name = e.target.dataset.name;
+    const cur = e.target.dataset.week;
+    const next = cur === 'this' ? 'next' : 'this';
+    if (!confirm(`"${name}"을(를) ${next==='this' ? '이번주' : '다음주'}로 이동할까요?`)) return;
+    const r = await fetch(`/api/admin/schools/${encodeURIComponent(name)}`, {
+      method: 'PUT', headers: {'Content-Type':'application/json','x-admin-token':token},
+      body: JSON.stringify({ week: next })
+    });
+    if (r.ok) { const s = allSchools.find(s => s.name === name); if (s) s.week = next; render(); }
+    else alert('오류가 발생했습니다.');
+  }
+
+  if (e.target.classList.contains('t-save')) {
+    const name = e.target.dataset.name;
+    const week = e.target.dataset.week;
+    const inp = e.target.previousElementSibling;
+    const teacher = inp.value.trim();
+    const r = await fetch(`/api/admin/schools/${encodeURIComponent(name)}`, {
+      method: 'PUT', headers: {'Content-Type':'application/json','x-admin-token':token},
+      body: JSON.stringify({ teacher, week })
+    });
+    if (r.ok) {
+      const s = allSchools.find(s => s.name === name); if (s) s.teacher = teacher;
+      e.target.textContent = '✓ 저장됨'; e.target.disabled = true;
+      setTimeout(() => { e.target.textContent = '저장'; e.target.disabled = false; }, 1500);
+    } else alert('오류가 발생했습니다.');
+  }
+
+  if (e.target.classList.contains('t-del')) {
+    const name = e.target.dataset.name;
+    if (!confirm(`"${name}" 학교를 삭제할까요?`)) return;
+    const r = await fetch(`/api/admin/schools/${encodeURIComponent(name)}`, {
+      method: 'DELETE', headers: {'x-admin-token': token}
+    });
+    if (r.ok) { allSchools = allSchools.filter(s => s.name !== name); render(); }
+    else alert('오류가 발생했습니다.');
+  }
+});
+
+// ── Add school ──
+document.getElementById('add-btn').addEventListener('click', async () => {
+  const name = document.getElementById('a-name').value.trim();
+  const type = document.getElementById('a-type').value;
+  const week = document.getElementById('a-week').value;
+  if (!name) { alert('학교명은 필수입니다.'); return; }
+
+  const body = {
+    name, type, week,
+    addr: document.getElementById('a-addr').value.trim(),
+    teacher: document.getElementById('a-teacher').value.trim(),
+    lat: document.getElementById('a-lat').value,
+    lon: document.getElementById('a-lon').value,
+    group: document.getElementById('a-group').value.trim(),
+    region: document.getElementById('a-region').value.trim(),
+  };
+
+  const r = await fetch('/api/admin/schools', {
+    method: 'POST', headers: {'Content-Type':'application/json','x-admin-token':token},
+    body: JSON.stringify(body)
+  });
+
+  if (r.ok) {
+    const school = await r.json();
+    allSchools.push(school);
+    ['a-name','a-addr','a-teacher','a-lat','a-lon','a-group','a-region'].forEach(id => document.getElementById(id).value = '');
+    const msg = document.getElementById('add-msg');
+    msg.textContent = `"${name}" 추가됐습니다.`;
+    setTimeout(() => { msg.textContent = ''; }, 3000);
+    render();
+  } else alert('추가에 실패했습니다.');
+});
+
+// ── Export JSON ──
+document.getElementById('export-btn').addEventListener('click', async () => {
+  const r = await fetch('/api/mapdata');
+  const data = await r.json();
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `sdc_map_data_${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+});
+</script>
+</body>
+</html>

@@ -33,6 +33,96 @@ app.get('/api/mapdata', (req, res) => {
   res.json(JSON.parse(fs.readFileSync(MAP_FILE, 'utf-8')));
 });
 
+// ── admin ─────────────────────────────────────────────
+const ADMIN_PW = process.env.ADMIN_PW || 'sdc2025';
+
+function adminAuth(req, res, next) {
+  if (req.headers['x-admin-token'] !== ADMIN_PW)
+    return res.status(401).json({ error: '인증 필요' });
+  next();
+}
+
+function findSchool(data, name) {
+  const lists = ['this_week_gangnam','this_week_bangwha','unvisited_gangnam','unvisited_bangwha'];
+  for (const list of lists) {
+    const idx = data[list].findIndex(s => s.name === name);
+    if (idx !== -1)
+      return { list, idx, school: data[list][idx], week: list.startsWith('this') ? 'this' : 'next' };
+  }
+  return null;
+}
+
+app.post('/api/admin/login', (req, res) => {
+  if (req.body.password === ADMIN_PW) res.json({ ok: true });
+  else res.status(401).json({ error: '비밀번호 오류' });
+});
+
+app.put('/api/admin/schools/:name', adminAuth, (req, res) => {
+  const name = decodeURIComponent(req.params.name);
+  const data = JSON.parse(fs.readFileSync(MAP_FILE, 'utf-8'));
+  const teachers = loadTeachers();
+  const found = findSchool(data, name);
+  if (!found) return res.status(404).json({ error: '학교 없음' });
+  const { list, idx, school } = found;
+  const { teacher, week } = req.body;
+
+  if (teacher !== undefined) {
+    if (found.week === 'this') data[list][idx].teacher = teacher;
+    else if (teacher) teachers[name] = teacher; else delete teachers[name];
+  }
+
+  if (week !== undefined && week !== found.week) {
+    const newList = week === 'this'
+      ? (school.type === 'gangnam' ? 'this_week_gangnam' : 'this_week_bangwha')
+      : (school.type === 'gangnam' ? 'unvisited_gangnam' : 'unvisited_bangwha');
+    if (week === 'this' && teachers[name]) { school.teacher = teachers[name]; delete teachers[name]; }
+    if (week === 'next' && school.teacher) { teachers[name] = school.teacher; }
+    data[list].splice(idx, 1);
+    data[newList].push(school);
+  }
+
+  fs.writeFileSync(MAP_FILE, JSON.stringify(data, null, 2), 'utf-8');
+  fs.writeFileSync(TEACHERS_FILE, JSON.stringify(teachers, null, 2), 'utf-8');
+  res.json({ ok: true });
+});
+
+app.post('/api/admin/schools', adminAuth, (req, res) => {
+  const { name, type, week, teacher, lat, lon, addr, subway, group, region } = req.body;
+  if (!name || !type || !week) return res.status(400).json({ error: 'name, type, week 필수' });
+  const data = JSON.parse(fs.readFileSync(MAP_FILE, 'utf-8'));
+  const school = {
+    name, addr: addr||'', subway: subway||'', gangnam_dist:'', group: group||'',
+    teacher: week==='this' ? (teacher||'') : '', type,
+    lat: parseFloat(lat)||0, lon: parseFloat(lon)||0,
+    dist_from_school:0, region: region||'', addr_full: addr||''
+  };
+  const list = week==='this'
+    ? (type==='gangnam' ? 'this_week_gangnam' : 'this_week_bangwha')
+    : (type==='gangnam' ? 'unvisited_gangnam' : 'unvisited_bangwha');
+  data[list].push(school);
+  if (week==='next' && teacher) { const t=loadTeachers(); t[name]=teacher; fs.writeFileSync(TEACHERS_FILE,JSON.stringify(t,null,2),'utf-8'); }
+  fs.writeFileSync(MAP_FILE, JSON.stringify(data, null, 2), 'utf-8');
+  res.status(201).json({ ...school, week });
+});
+
+app.delete('/api/admin/schools/:name', adminAuth, (req, res) => {
+  const name = decodeURIComponent(req.params.name);
+  const data = JSON.parse(fs.readFileSync(MAP_FILE, 'utf-8'));
+  const teachers = loadTeachers();
+  const lists = ['this_week_gangnam','this_week_bangwha','unvisited_gangnam','unvisited_bangwha'];
+  let found = false;
+  for (const list of lists) {
+    const before = data[list].length;
+    data[list] = data[list].filter(s => s.name !== name);
+    if (data[list].length < before) found = true;
+  }
+  if (!found) return res.status(404).json({ error: '학교 없음' });
+  delete teachers[name];
+  fs.writeFileSync(MAP_FILE, JSON.stringify(data, null, 2), 'utf-8');
+  fs.writeFileSync(TEACHERS_FILE, JSON.stringify(teachers, null, 2), 'utf-8');
+  res.json({ ok: true });
+});
+
 // ── next-week teacher assignment ──────────────────────
 app.get('/api/nextweek-teachers', (req, res) => {
   res.json(loadTeachers());
