@@ -32,8 +32,9 @@ body {
 .banner-text p  { font-size: 12px; color: #64748b; margin-top: 1px; }
 .banner-badges  { margin-left: auto; display: flex; gap: 8px; }
 .bdg { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; color: white; }
-.bdg-g { background: #15803d; }
-.bdg-o { background: #b45309; }
+.bdg-g  { background: #16a34a; }
+.bdg-dg { background: #14532d; }
+.bdg-r  { background: #dc2626; }
 
 /* 2) 네비 */
 nav {
@@ -132,8 +133,9 @@ main {
 .sch-row:hover { background: #f8fafc; }
 .sch-row.act   { background: #eff6ff; border-left: 3px solid #2563eb; padding-left: 7px; }
 .pdot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
-.pg { background: #16a34a; }
-.po { background: #ea580c; }
+.pdg { background: #14532d; }
+.pg  { background: #16a34a; }
+.pr  { background: #dc2626; }
 .sn { font-size: 13px; font-weight: 700; color: #1e293b; }
 .sm { font-size: 11px; color: #94a3b8; margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 210px; }
 .tag { display: inline-block; padding: 1px 4px; border-radius: 3px; font-size: 10px; font-weight: 600; margin-right: 2px; }
@@ -218,8 +220,9 @@ textarea.fi { resize: vertical; min-height: 80px; }
     <p>서울특별시교육청 · 방문 일정 및 담당자 관리</p>
   </div>
   <div class="banner-badges">
-    <span class="bdg bdg-g" id="badge-this">● 이번주 —</span>
-    <span class="bdg bdg-o" id="badge-next">● 다음주 —</span>
+    <span class="bdg bdg-dg" id="badge-last">● 저번주 —</span>
+    <span class="bdg bdg-g"  id="badge-this">● 이번주 —</span>
+    <span class="bdg bdg-r"  id="badge-unassigned">● 미배정 —</span>
   </div>
 </div>
 
@@ -239,9 +242,10 @@ textarea.fi { resize: vertical; min-height: 80px; }
       <div class="sb-top">
         <input class="s-inp" id="search" type="text" placeholder="🔍 학교명 / 담당자 검색">
         <div class="filt-row">
-          <button class="filt on"  onclick="setFilt('all',this)">전체</button>
-          <button class="filt"     onclick="setFilt('this',this)">이번주</button>
-          <button class="filt"     onclick="setFilt('next',this)">다음주</button>
+          <button class="filt on" onclick="setFilt('all',this)">전체</button>
+          <button class="filt"    onclick="setFilt('current',this)">이번주</button>
+          <button class="filt"    onclick="setFilt('last',this)">저번주</button>
+          <button class="filt"    onclick="setFilt('unassigned',this)">미배정</button>
         </div>
       </div>
       <div class="sch-list" id="sch-list">
@@ -252,8 +256,9 @@ textarea.fi { resize: vertical; min-height: 80px; }
     <div class="map-area">
       <div id="map"></div>
       <div class="legend">
-        <div class="li"><span class="ld" style="background:#16a34a"></span>이번주 방문</div>
-        <div class="li"><span class="ld" style="background:#ea580c"></span>다음주 방문예정</div>
+        <div class="li"><span class="ld" style="background:#16a34a"></span>이번주 방문 (배정완료)</div>
+        <div class="li"><span class="ld" style="background:#14532d"></span>저번주 방문완료</div>
+        <div class="li"><span class="ld" style="background:#dc2626"></span>미배정</div>
       </div>
     </div>
   </div>
@@ -303,10 +308,12 @@ async function init() {
     ...data.unvisited_gangnam.map(s => ({ ...s, week: 'next' })),
     ...data.unvisited_bangwha.map(s =>  ({ ...s, week: 'next' })),
   ];
-  const tn = allSchools.filter(s => s.week === 'this').length;
-  const nn = allSchools.filter(s => s.week === 'next').length;
-  document.getElementById('badge-this').textContent = `● 이번주 ${tn}`;
-  document.getElementById('badge-next').textContent = `● 다음주 ${nn}`;
+  const last       = allSchools.filter(s => s.week === 'this').length;
+  const current    = allSchools.filter(s => s.week === 'next' && teacherMap[s.name]).length;
+  const unassigned = allSchools.filter(s => s.week === 'next' && !teacherMap[s.name]).length;
+  document.getElementById('badge-last').textContent       = `● 저번주 ${last}`;
+  document.getElementById('badge-this').textContent       = `● 이번주 ${current}`;
+  document.getElementById('badge-unassigned').textContent = `● 미배정 ${unassigned}`;
   initMap();
   renderList();
 }
@@ -330,13 +337,19 @@ function initMap() {
   map.addControl(new kakao.maps.ZoomControl(),    kakao.maps.ControlPosition.RIGHT);
   map.addControl(new kakao.maps.MapTypeControl(), kakao.maps.ControlPosition.TOPRIGHT);
 
-  const iG = mkImg('#16a34a'), iN = mkImg('#ea580c');
+  const iLast    = mkImg('#14532d');
+  const iCurrent = mkImg('#16a34a');
+  const iRed     = mkImg('#dc2626');
   const markers = [];
   allSchools.forEach(s => {
     if (!s.lat || !s.lon) return;
+    let img;
+    if (s.week === 'this')            img = iLast;
+    else if (teacherMap[s.name])      img = iCurrent;
+    else                              img = iRed;
     const m = new kakao.maps.Marker({
       position: new kakao.maps.LatLng(s.lat, s.lon),
-      image: s.week === 'this' ? iG : iN,
+      image: img,
       title: s.name
     });
     s._m = m;
@@ -425,15 +438,17 @@ async function saveTeacher(name, teacher, box) {
 function renderList() {
   const q = document.getElementById('search').value.toLowerCase();
   const filtered = allSchools.filter(s => {
-    if (curFilt === 'this' && s.week !== 'this') return false;
-    if (curFilt === 'next' && s.week !== 'next') return false;
+    const teacher = s.week === 'this' ? s.teacher : teacherMap[s.name];
+    if (curFilt === 'current'    && !(s.week === 'next' && teacherMap[s.name])) return false;
+    if (curFilt === 'last'       && s.week !== 'this') return false;
+    if (curFilt === 'unassigned' && !(s.week === 'next' && !teacherMap[s.name])) return false;
     if (!q) return true;
-    const t = ((s.week === 'this' ? s.teacher : teacherMap[s.name]) || '').toLowerCase();
-    return s.name.toLowerCase().includes(q) || t.includes(q);
+    return s.name.toLowerCase().includes(q) || (teacher||'').toLowerCase().includes(q);
   });
 
-  const tw = filtered.filter(s => s.week === 'this');
-  const nw = filtered.filter(s => s.week === 'next');
+  const current    = filtered.filter(s => s.week === 'next' && teacherMap[s.name]);
+  const last       = filtered.filter(s => s.week === 'this');
+  const unassigned = filtered.filter(s => s.week === 'next' && !teacherMap[s.name]);
   const list = document.getElementById('sch-list');
   list.innerHTML = '';
 
@@ -460,8 +475,9 @@ function renderList() {
     });
   }
 
-  sec('이번주 방문', tw, 'pg', '#16a34a');
-  sec('다음주 방문예정', nw, 'po', '#ea580c');
+  sec('이번주 방문 (배정완료)', current,    'pg',  '#16a34a');
+  sec('저번주 방문완료',        last,        'pdg', '#14532d');
+  sec('미배정',                 unassigned,  'pr',  '#dc2626');
 
   if (!tw.length && !nw.length)
     list.innerHTML = '<div style="padding:30px;text-align:center;color:#94a3b8;font-size:13px">검색 결과 없음</div>';
