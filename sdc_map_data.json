@@ -123,20 +123,6 @@
       "addr_full": "서울특별시 서초구 동광로 144"
     },
     {
-      "name": "세화여자중학교",
-      "addr": "서울특별시 서초구 신반포로 56-7",
-      "subway": "신반포역(9호선, 0.2km) / 구반포역(9호선, 0.6km)",
-      "gangnam_dist": "3.0km",
-      "group": "C",
-      "teacher": "김정은",
-      "type": "gangnam",
-      "lat": 37.5019828,
-      "lon": 126.99423,
-      "dist_from_school": 17.73,
-      "region": "서울_강서양천",
-      "addr_full": "서울특별시 서초구 신반포로 56-7"
-    },
-    {
       "name": "이수중학교",
       "addr": "서울특별시 서초구 방배중앙로3길 32",
       "subway": "방배역(2호선, 0.7km) / 사당역(4호선, 0.8km)",
@@ -1049,26 +1035,6 @@
       "region": "인천"
     },
     {
-      "name": "계산중학교",
-      "teacher": "전민주",
-      "type": "bangwha",
-      "lat": 37.53455221,
-      "lon": 126.7425839,
-      "addr": "인천광역시 계양구 도두리로 67-16",
-      "dist_from_school": 7.96,
-      "region": "인천"
-    },
-    {
-      "name": "인천동양중학교",
-      "teacher": "전민주",
-      "type": "bangwha",
-      "lat": 37.56235282,
-      "lon": 126.7606074,
-      "addr": "인천광역시 계양구 당미길 56",
-      "dist_from_school": 5.13,
-      "region": "인천"
-    },
-    {
       "name": "염경중학교",
       "teacher": "오성휘",
       "type": "bangwha",
@@ -1405,7 +1371,7 @@
       "lat": 37.53621409,
       "lon": 126.8424164,
       "addr": "서울특별시 강서구 강서로17나길 86",
-      "dist_from_school": 5.0,
+      "dist_from_school": 5,
       "region": "서울_강서양천"
     },
     {
@@ -1597,6 +1563,16 @@
       "addr": "경기도 부천시 오정구 소사로 647",
       "dist_from_school": 6.87,
       "region": "부천"
+    },
+    {
+      "name": "인천동양중학교",
+      "teacher": "전민주",
+      "type": "bangwha",
+      "lat": 37.56235282,
+      "lon": 126.7606074,
+      "addr": "인천광역시 계양구 당미길 56",
+      "dist_from_school": 5.13,
+      "region": "인천"
     }
   ],
   "unvisited_bangwha": [
@@ -2074,7 +2050,7 @@
       "lat": 37.69218769,
       "lon": 126.7549202,
       "addr": "경기도 고양시 일산서구 하이파크3로 2",
-      "dist_from_school": 14.0,
+      "dist_from_school": 14,
       "region": "고양"
     },
     {
@@ -2309,7 +2285,8 @@
       "lon": 126.9469053,
       "addr": "서울특별시 마포구 백범로 139",
       "dist_from_school": 11.98,
-      "region": "서울_서북"
+      "region": "서울_서북",
+      "teacher": ""
     },
     {
       "name": "부평여자중학교",
@@ -2372,7 +2349,8 @@
       "lon": 126.7326684,
       "addr": "인천광역시 계양구 장제로755번길 16",
       "dist_from_school": 8.58,
-      "region": "인천"
+      "region": "인천",
+      "teacher": ""
     },
     {
       "name": "신도림중학교",
@@ -2381,7 +2359,8 @@
       "lon": 126.8848071,
       "addr": "서울특별시 구로구 경인로63길 74",
       "dist_from_school": 9.45,
-      "region": "서울_서남"
+      "region": "서울_서남",
+      "teacher": ""
     },
     {
       "name": "한국글로벌중학교",
@@ -2759,7 +2738,8 @@
       "lon": 126.7418432,
       "addr": "인천광역시 부평구 수변로 199",
       "dist_from_school": 10.29,
-      "region": "인천"
+      "region": "인천",
+      "teacher": ""
     },
     {
       "name": "성수중학교",
@@ -2804,7 +2784,8 @@
       "lon": 126.8613425,
       "addr": "서울특별시 구로구 중앙로3길 20",
       "dist_from_school": 9.37,
-      "region": "서울_서남"
+      "region": "서울_서남",
+      "teacher": ""
     },
     {
       "name": "홍은중학교",
@@ -2822,7 +2803,8 @@
       "lon": 126.730699,
       "addr": "인천광역시 계양구 계산새로33번길 5",
       "dist_from_school": 8.56,
-      "region": "인천"
+      "region": "인천",
+      "teacher": ""
     },
     {
       "name": "북인천중학교",
@@ -2858,7 +2840,8 @@
       "lon": 126.7405362,
       "addr": "인천광역시 계양구 장제로995번길 39",
       "dist_from_school": 7.08,
-      "region": "인천"
+      "region": "인천",
+      "teacher": ""
     },
     {
       "name": "만수북중학교",
@@ -2885,7 +2868,8 @@
       "lon": 126.934132,
       "addr": "서울특별시 마포구 신수로 49",
       "dist_from_school": 10.92,
-      "region": "서울_서북"
+      "region": "서울_서북",
+      "teacher": ""
     },
     {
       "name": "한성여자중학교",
@@ -2903,7 +2887,8 @@
       "lon": 126.8536725,
       "addr": "서울특별시 구로구 경인로 301",
       "dist_from_school": 9.24,
-      "region": "서울_서남"
+      "region": "서울_서남",
+      "teacher": ""
     },
     {
       "name": "숭곡중학교",
@@ -2948,7 +2933,8 @@
       "lon": 126.9165628,
       "addr": "서울특별시 마포구 성지1길 32-13",
       "dist_from_school": 9.41,
-      "region": "서울_서북"
+      "region": "서울_서북",
+      "teacher": ""
     },
     {
       "name": "홍익대학교사범대학부속중학교",
@@ -3056,7 +3042,8 @@
       "lon": 126.9574775,
       "addr": "서울특별시 동작구 흑석로9길 94",
       "dist_from_school": 14.45,
-      "region": "서울_강서양천"
+      "region": "서울_강서양천",
+      "teacher": ""
     },
     {
       "name": "갈산중학교",
@@ -3074,7 +3061,8 @@
       "lon": 126.6395666,
       "addr": "인천광역시 중구 참외전로244번길 47",
       "dist_from_school": 19.7,
-      "region": "인천"
+      "region": "인천",
+      "teacher": ""
     },
     {
       "name": "옥정중학교",
@@ -3155,7 +3143,8 @@
       "lon": 126.9136469,
       "addr": "서울특별시 영등포구 영등포로62길 31",
       "dist_from_school": 10.95,
-      "region": "서울_서남"
+      "region": "서울_서남",
+      "teacher": ""
     },
     {
       "name": "선화여자중학교",
@@ -3173,7 +3162,8 @@
       "lon": 126.7382324,
       "addr": "인천광역시 계양구 장제로1181번길 9",
       "dist_from_school": 6.92,
-      "region": "인천"
+      "region": "인천",
+      "teacher": ""
     },
     {
       "name": "배문중학교",
@@ -3263,7 +3253,8 @@
       "lon": 126.8910999,
       "addr": "서울특별시 구로구 구로중앙로 48",
       "dist_from_school": 11.19,
-      "region": "서울_서남"
+      "region": "서울_서남",
+      "teacher": ""
     },
     {
       "name": "문성중학교",
@@ -3424,7 +3415,7 @@
       "lat": 37.54289988,
       "lon": 126.9694475,
       "addr": "서울특별시 용산구 청파로 263",
-      "dist_from_school": 14.0,
+      "dist_from_school": 14,
       "region": "서울_강서양천"
     },
     {
@@ -3794,7 +3785,8 @@
       "lon": 126.94907,
       "addr": "서울특별시 마포구 백범로25길 34",
       "dist_from_school": 12.13,
-      "region": "서울_서북"
+      "region": "서울_서북",
+      "teacher": ""
     },
     {
       "name": "진관중학교",
@@ -3920,7 +3912,8 @@
       "lon": 126.9209573,
       "addr": "서울특별시 관악구 남부순환로156길 39",
       "dist_from_school": 14.06,
-      "region": "서울_강서양천"
+      "region": "서울_강서양천",
+      "teacher": ""
     },
     {
       "name": "부천여자중학교",
@@ -3938,7 +3931,8 @@
       "lon": 126.9754853,
       "addr": "서울특별시 용산구 이촌로65가길 91",
       "dist_from_school": 15.29,
-      "region": "서울_강서양천"
+      "region": "서울_강서양천",
+      "teacher": ""
     },
     {
       "name": "아현중학교",
@@ -4055,7 +4049,8 @@
       "lon": 126.6355015,
       "addr": "경기도 김포시 양촌읍 양곡4로 243",
       "dist_from_school": 18.4,
-      "region": "김포"
+      "region": "김포",
+      "teacher": ""
     },
     {
       "name": "배화여자중학교",
@@ -4073,7 +4068,8 @@
       "lon": 126.8737702,
       "addr": "서울특별시 구로구 구일로 90-133",
       "dist_from_school": 10.31,
-      "region": "서울_서남"
+      "region": "서울_서남",
+      "teacher": ""
     },
     {
       "name": "한성중학교",
@@ -4100,7 +4096,8 @@
       "lon": 126.6234637,
       "addr": "경기도 김포시 김포한강9로 140",
       "dist_from_school": 18.83,
-      "region": "김포"
+      "region": "김포",
+      "teacher": ""
     },
     {
       "name": "범박중학교",
@@ -4127,7 +4124,8 @@
       "lon": 126.6258995,
       "addr": "경기도 김포시 김포한강9로 19",
       "dist_from_school": 18.16,
-      "region": "김포"
+      "region": "김포",
+      "teacher": ""
     },
     {
       "name": "중앙여자중학교",
@@ -4244,7 +4242,8 @@
       "lon": 126.6390605,
       "addr": "경기도 김포시 김포한강8로 173-48",
       "dist_from_school": 17.05,
-      "region": "김포"
+      "region": "김포",
+      "teacher": ""
     },
     {
       "name": "인천초은중학교",
@@ -4280,7 +4279,8 @@
       "lon": 126.8958365,
       "addr": "서울특별시 영등포구 대림로31나길 17",
       "dist_from_school": 11.17,
-      "region": "서울_서남"
+      "region": "서울_서남",
+      "teacher": ""
     },
     {
       "name": "창천중학교",
@@ -4316,7 +4316,8 @@
       "lon": 126.9079522,
       "addr": "서울특별시 마포구 성산로4길 42",
       "dist_from_school": 8.22,
-      "region": "서울_서북"
+      "region": "서울_서북",
+      "teacher": ""
     },
     {
       "name": "지축중학교",
@@ -4433,7 +4434,8 @@
       "lon": 126.9083472,
       "addr": "서울특별시 은평구 갈현로17나길 12-1",
       "dist_from_school": 8.98,
-      "region": "서울_서북"
+      "region": "서울_서북",
+      "teacher": ""
     },
     {
       "name": "영훈국제중학교",
@@ -4487,7 +4489,8 @@
       "lon": 126.9154741,
       "addr": "서울특별시 영등포구 신길로28길 43",
       "dist_from_school": 12.02,
-      "region": "서울_서남"
+      "region": "서울_서남",
+      "teacher": ""
     },
     {
       "name": "해솔중학교",
@@ -4586,7 +4589,8 @@
       "lon": 126.7117777,
       "addr": "인천광역시 서구 이음1로 455",
       "dist_from_school": 9.57,
-      "region": "인천"
+      "region": "인천",
+      "teacher": ""
     },
     {
       "name": "충현중학교",
@@ -4613,7 +4617,8 @@
       "lon": 126.6251437,
       "addr": "경기도 김포시 양촌읍 양곡4로 138",
       "dist_from_school": 19.22,
-      "region": "김포"
+      "region": "김포",
+      "teacher": ""
     },
     {
       "name": "인천청호중학교",
@@ -4631,7 +4636,8 @@
       "lon": 126.6747635,
       "addr": "경기도 김포시 운양로 158",
       "dist_from_school": 15.32,
-      "region": "김포"
+      "region": "김포",
+      "teacher": ""
     },
     {
       "name": "남서울중학교",
@@ -4640,7 +4646,8 @@
       "lon": 126.9210371,
       "addr": "서울특별시 관악구 남부순환로172길 97",
       "dist_from_school": 13.95,
-      "region": "서울_강서양천"
+      "region": "서울_강서양천",
+      "teacher": ""
     },
     {
       "name": "광남중학교",
@@ -4650,6 +4657,44 @@
       "addr": "경기도 광명시 광명로 785",
       "dist_from_school": 12.1,
       "region": "서울_강서양천"
+    },
+    {
+      "name": "계산중학교",
+      "teacher": "",
+      "type": "bangwha",
+      "lat": 37.53455221,
+      "lon": 126.7425839,
+      "addr": "인천광역시 계양구 도두리로 67-16",
+      "dist_from_school": 7.96,
+      "region": "인천"
+    },
+    {
+      "name": "중앙대학교사범대학부속중학교",
+      "addr": "서울특별시 동작구 서달로 124",
+      "subway": "",
+      "gangnam_dist": "",
+      "group": "",
+      "teacher": "",
+      "type": "bangwha",
+      "lat": 37.5039,
+      "lon": 126.9544,
+      "dist_from_school": 0,
+      "region": "",
+      "addr_full": "서울특별시 동작구 서달로 124"
+    },
+    {
+      "name": "홍익대학교사범대학부속중학교",
+      "addr": "서울특별시 성북구 성북로14가길 23",
+      "subway": "",
+      "gangnam_dist": "",
+      "group": "",
+      "teacher": "",
+      "type": "bangwha",
+      "lat": 37.5919,
+      "lon": 127.0005,
+      "dist_from_school": 0,
+      "region": "",
+      "addr_full": "서울특별시 성북구 성북로14가길 23"
     }
   ],
   "unvisited_gangnam": [
@@ -4785,7 +4830,7 @@
       "lat": 37.53273562,
       "lon": 127.1197395,
       "addr": "서울특별시 송파구 올림픽로 565",
-      "dist_from_gangnam": 9.0,
+      "dist_from_gangnam": 9,
       "region": "서울_강서양천"
     },
     {
@@ -5408,6 +5453,20 @@
       "addr": "서울특별시 송파구 오금로29길 31",
       "dist_from_gangnam": 8.41,
       "region": "서울_강서양천"
+    },
+    {
+      "name": "세화여자중학교",
+      "addr": "서울특별시 서초구 신반포로 56-7",
+      "subway": "신반포역(9호선, 0.2km) / 구반포역(9호선, 0.6km)",
+      "gangnam_dist": "3.0km",
+      "group": "C",
+      "teacher": "",
+      "type": "gangnam",
+      "lat": 37.5019828,
+      "lon": 126.99423,
+      "dist_from_school": 17.73,
+      "region": "서울_강서양천",
+      "addr_full": "서울특별시 서초구 신반포로 56-7"
     }
   ]
 }
