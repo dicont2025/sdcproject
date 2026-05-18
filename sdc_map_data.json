@@ -4765,6 +4765,34 @@
       "dist_from_school": 0,
       "region": "",
       "addr_full": "서울특별시 관악구 봉천동 238"
+    },
+    {
+      "name": "강서양천제1발명교육센터",
+      "addr": "서울 양천구 신월동 17-1",
+      "subway": "",
+      "gangnam_dist": "",
+      "group": "",
+      "teacher": "",
+      "type": "bangwha",
+      "lat": 37.5413125752926,
+      "lon": 126.830006850863,
+      "dist_from_school": 0,
+      "region": "",
+      "addr_full": "서울 양천구 월정로 269"
+    },
+    {
+      "name": "남부제2발명교육센터",
+      "addr": "서울 구로구 구로동 443",
+      "subway": "",
+      "gangnam_dist": "",
+      "group": "",
+      "teacher": "",
+      "type": "bangwha",
+      "lat": 37.4963244247567,
+      "lon": 126.886253720572,
+      "dist_from_school": 0,
+      "region": "",
+      "addr_full": "서울 구로구 구로중앙로27나길 21"
     }
   ],
   "unvisited_gangnam": [
