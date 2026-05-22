@@ -6,8 +6,8 @@
     "gangnam_lon": 127.027619,
     "bangwha_lat": 37.577446,
     "bangwha_lon": 126.812741,
-    "total_this_week": 141,
-    "total_unvisited": 423
+    "total_this_week": 245,
+    "total_unvisited": 327
   },
   "this_week_gangnam": [
     {
@@ -611,6 +611,618 @@
       "dist_from_school": 16.04,
       "region": "서울_강서양천",
       "addr_full": "경기도 시흥시 포도원로 88-1"
+    },
+    {
+      "name": "위례솔중학교",
+      "type": "gangnam",
+      "lat": 37.48701307,
+      "lon": 127.1505867,
+      "addr": "서울특별시 송파구 위례북로2길 10",
+      "dist_from_gangnam": 10.92,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "송례중학교",
+      "type": "gangnam",
+      "lat": 37.47783301,
+      "lon": 127.1397415,
+      "addr": "서울특별시 송파구 위례순환로 429",
+      "dist_from_gangnam": 10.14,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "오륜중학교",
+      "type": "gangnam",
+      "lat": 37.51632395,
+      "lon": 127.1389238,
+      "addr": "서울특별시 송파구 양재대로 1242",
+      "dist_from_gangnam": 10.03,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "방이중학교",
+      "type": "gangnam",
+      "lat": 37.51501058,
+      "lon": 127.1132445,
+      "addr": "서울특별시 송파구 오금로11길 64",
+      "dist_from_gangnam": 7.79,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "거원중학교",
+      "type": "gangnam",
+      "lat": 37.48772386,
+      "lon": 127.1465491,
+      "addr": "서울특별시 송파구 양산로2길 30",
+      "dist_from_gangnam": 10.55,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "오금중학교",
+      "type": "gangnam",
+      "lat": 37.50527064,
+      "lon": 127.1288011,
+      "addr": "서울특별시 송파구 오금로35길 20",
+      "dist_from_gangnam": 8.96,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "영파여자중학교",
+      "type": "gangnam",
+      "lat": 37.53273562,
+      "lon": 127.1197395,
+      "addr": "서울특별시 송파구 올림픽로 565",
+      "dist_from_gangnam": 9,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "문현중학교",
+      "type": "gangnam",
+      "lat": 37.48058417,
+      "lon": 127.1279464,
+      "addr": "서울특별시 송파구 충민로 99",
+      "dist_from_gangnam": 9.06,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "송파중학교",
+      "type": "gangnam",
+      "lat": 37.49592462,
+      "lon": 127.1299138,
+      "addr": "서울특별시 송파구 동남로 203",
+      "dist_from_gangnam": 9.03,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "석촌중학교",
+      "type": "gangnam",
+      "lat": 37.50145499,
+      "lon": 127.1211174,
+      "addr": "서울특별시 송파구 송이로15길 13",
+      "dist_from_gangnam": 8.26,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "잠실중학교",
+      "type": "gangnam",
+      "lat": 37.51781757,
+      "lon": 127.0986662,
+      "addr": "서울특별시 송파구 올림픽로35길 130",
+      "dist_from_gangnam": 6.65,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "가원중학교",
+      "type": "gangnam",
+      "lat": 37.49099949,
+      "lon": 127.1231711,
+      "addr": "서울특별시 송파구 중대로10길 40-18",
+      "dist_from_gangnam": 8.47,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "행당중학교",
+      "type": "gangnam",
+      "lat": 37.55455404,
+      "lon": 127.0419634,
+      "addr": "서울특별시 성동구 왕십리로 189",
+      "dist_from_gangnam": 6.42,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "수서중학교",
+      "type": "gangnam",
+      "lat": 37.49120377,
+      "lon": 127.1023799,
+      "addr": "서울특별시 강남구 광평로59길 57",
+      "dist_from_gangnam": 6.64,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "감일백제중학교",
+      "type": "gangnam",
+      "lat": 37.50986274,
+      "lon": 127.1509199,
+      "addr": "경기도 하남시 감일백제로 210",
+      "dist_from_gangnam": 10.96,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "동국대학교사범대학부속가람중학교",
+      "type": "gangnam",
+      "lat": 37.54192936,
+      "lon": 127.0869731,
+      "addr": "서울특별시 광진구 광나루로36길 47",
+      "dist_from_gangnam": 7.16,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "광양중학교",
+      "type": "gangnam",
+      "lat": 37.53089134,
+      "lon": 127.08617,
+      "addr": "서울특별시 광진구 자양로3길 7",
+      "dist_from_gangnam": 6.33,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "감일중학교",
+      "type": "gangnam",
+      "lat": 37.50118776,
+      "lon": 127.1623407,
+      "addr": "경기도 하남시 감일백제로 55",
+      "dist_from_gangnam": 11.89,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "문정중학교",
+      "type": "gangnam",
+      "lat": 37.48848095,
+      "lon": 127.1300209,
+      "addr": "서울특별시 송파구 문정로 73",
+      "dist_from_gangnam": 9.1,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "태평중학교",
+      "type": "gangnam",
+      "lat": 37.44667267,
+      "lon": 127.1288292,
+      "addr": "경기도 성남시 수정구 제일로 223",
+      "dist_from_gangnam": 10.6,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "용곡중학교",
+      "type": "gangnam",
+      "lat": 37.56595126,
+      "lon": 127.0890896,
+      "addr": "서울특별시 광진구 용마산로22길 76",
+      "dist_from_gangnam": 9.3,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "배명중학교",
+      "type": "gangnam",
+      "lat": 37.4976895,
+      "lon": 127.0958118,
+      "addr": "서울특별시 송파구 삼학사로 11",
+      "dist_from_gangnam": 6.02,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "구의중학교",
+      "type": "gangnam",
+      "lat": 37.5428503,
+      "lon": 127.0788404,
+      "addr": "서울특별시 광진구 광나루로30길 80",
+      "dist_from_gangnam": 6.73,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "광진중학교",
+      "type": "gangnam",
+      "lat": 37.53221959,
+      "lon": 127.0901621,
+      "addr": "서울특별시 광진구 뚝섬로64길 45",
+      "dist_from_gangnam": 6.7,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "건국대학교사범대학부속중학교",
+      "type": "gangnam",
+      "lat": 37.54172407,
+      "lon": 127.0815971,
+      "addr": "서울특별시 광진구 자양로 145-1",
+      "dist_from_gangnam": 6.81,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "서울체육중학교",
+      "type": "gangnam",
+      "lat": 37.52233038,
+      "lon": 127.1298226,
+      "addr": "서울특별시 송파구 강동대로 232",
+      "dist_from_gangnam": 9.41,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "보성중학교",
+      "type": "gangnam",
+      "lat": 37.52008989,
+      "lon": 127.1357293,
+      "addr": "서울특별시 송파구 양재대로 1278",
+      "dist_from_gangnam": 9.85,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "수진중학교",
+      "type": "gangnam",
+      "lat": 37.43711701,
+      "lon": 127.1236376,
+      "addr": "경기도 성남시 수정구 모란로 55",
+      "dist_from_gangnam": 10.84,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "광장중학교",
+      "type": "gangnam",
+      "lat": 37.54717752,
+      "lon": 127.1019276,
+      "addr": "서울특별시 광진구 광장로1길 1",
+      "dist_from_gangnam": 8.54,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "자양중학교",
+      "type": "gangnam",
+      "lat": 37.53539805,
+      "lon": 127.074384,
+      "addr": "서울특별시 광진구 뚝섬로41길 33",
+      "dist_from_gangnam": 5.86,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "성남여자중학교",
+      "type": "gangnam",
+      "lat": 37.45023391,
+      "lon": 127.1427174,
+      "addr": "경기도 성남시 수정구 공원로 446",
+      "dist_from_gangnam": 11.46,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "풍성중학교",
+      "type": "gangnam",
+      "lat": 37.52543858,
+      "lon": 127.1128839,
+      "addr": "서울특별시 송파구 강동대로2길 27",
+      "dist_from_gangnam": 8.12,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "경일중학교",
+      "type": "gangnam",
+      "lat": 37.54382982,
+      "lon": 127.0478683,
+      "addr": "서울특별시 성동구 성수일로 27",
+      "dist_from_gangnam": 5.41,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "창성중학교",
+      "type": "gangnam",
+      "lat": 37.46072562,
+      "lon": 127.1540897,
+      "addr": "경기도 성남시 수정구 수정로 400",
+      "dist_from_gangnam": 11.9,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "잠신중학교",
+      "type": "gangnam",
+      "lat": 37.51613937,
+      "lon": 127.087802,
+      "addr": "서울특별시 송파구 잠실로 12",
+      "dist_from_gangnam": 5.68,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "풍납중학교",
+      "type": "gangnam",
+      "lat": 37.52536544,
+      "lon": 127.1156283,
+      "addr": "서울특별시 송파구 올림픽로43길 20",
+      "dist_from_gangnam": 8.34,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "보인중학교",
+      "type": "gangnam",
+      "lat": 37.4975692,
+      "lon": 127.1395178,
+      "addr": "서울특별시 송파구 오금로49길 18",
+      "dist_from_gangnam": 9.87,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "잠실여자중학교",
+      "type": "gangnam",
+      "lat": 37.50177714,
+      "lon": 127.1142413,
+      "addr": "서울특별시 송파구 송파대로38길 8",
+      "dist_from_gangnam": 7.65,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "풍생중학교",
+      "type": "gangnam",
+      "lat": 37.43504295,
+      "lon": 127.1314146,
+      "addr": "경기도 성남시 수정구 산성대로 111",
+      "dist_from_gangnam": 11.53,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "성내중학교",
+      "type": "gangnam",
+      "lat": 37.52906191,
+      "lon": 127.1291173,
+      "addr": "서울특별시 강동구 성안로7길 36",
+      "dist_from_gangnam": 9.6,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "양진중학교",
+      "type": "gangnam",
+      "lat": 37.54457517,
+      "lon": 127.0983485,
+      "addr": "서울특별시 광진구 워커힐로 32",
+      "dist_from_gangnam": 8.11,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "위례중학교",
+      "type": "gangnam",
+      "lat": 37.47721139,
+      "lon": 127.1483118,
+      "addr": "경기도 하남시 위례순환로 343",
+      "dist_from_gangnam": 10.9,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "대원국제중학교",
+      "type": "gangnam",
+      "lat": 37.56249279,
+      "lon": 127.0894181,
+      "addr": "서울특별시 광진구 용마산로22길 26",
+      "dist_from_gangnam": 9.01,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "둔촌중학교",
+      "type": "gangnam",
+      "lat": 37.53083609,
+      "lon": 127.1463317,
+      "addr": "서울특별시 강동구 진황도로61길 25-30",
+      "dist_from_gangnam": 11.09,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "동북중학교",
+      "type": "gangnam",
+      "lat": 37.52024061,
+      "lon": 127.1394507,
+      "addr": "서울특별시 강동구 강동대로 305",
+      "dist_from_gangnam": 10.17,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "한산중학교",
+      "type": "gangnam",
+      "lat": 37.52890274,
+      "lon": 127.1403034,
+      "addr": "서울특별시 강동구 풍성로 251",
+      "dist_from_gangnam": 10.52,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "해누리중학교",
+      "type": "gangnam",
+      "lat": 37.49824464,
+      "lon": 127.1021919,
+      "addr": "서울특별시 송파구 송파대로37길 95",
+      "dist_from_gangnam": 6.58,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "위례중앙중학교",
+      "type": "gangnam",
+      "lat": 37.47188409,
+      "lon": 127.1382118,
+      "addr": "경기도 성남시 수정구 위례순환로 91",
+      "dist_from_gangnam": 10.18,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "위례한빛중학교",
+      "type": "gangnam",
+      "lat": 37.46797483,
+      "lon": 127.1486362,
+      "addr": "경기도 성남시 수정구 위례동로 85",
+      "dist_from_gangnam": 11.19,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "세륜중학교",
+      "type": "gangnam",
+      "lat": 37.50893314,
+      "lon": 127.1312464,
+      "addr": "서울특별시 송파구 양재대로72길 41",
+      "dist_from_gangnam": 9.22,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "방산중학교",
+      "type": "gangnam",
+      "lat": 37.50937287,
+      "lon": 127.1218756,
+      "addr": "서울특별시 송파구 오금로29길 31",
+      "dist_from_gangnam": 8.41,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "보평중학교",
+      "type": "gangnam",
+      "lat": 37.3939483583,
+      "lon": 127.1158735082,
+      "addr": "경기도 성남시 분당구 동판교로 131",
+      "dist_from_school": 0.51,
+      "region": "성남"
+    },
+    {
+      "name": "삼평중학교",
+      "type": "gangnam",
+      "lat": 37.400528595,
+      "lon": 127.1159303111,
+      "addr": "경기도 성남시 분당구 대왕판교로644번길 77",
+      "dist_from_school": 0.68,
+      "region": "성남"
+    },
+    {
+      "name": "동광중학교",
+      "type": "gangnam",
+      "lat": 37.4332632429,
+      "lon": 127.1436711418,
+      "addr": "경기도 성남시 중원구 원터로 84",
+      "dist_from_school": 0.85,
+      "region": "성남"
+    },
+    {
+      "name": "신백현중학교",
+      "type": "gangnam",
+      "lat": 37.386295184,
+      "lon": 127.1102192139,
+      "addr": "경기도 성남시 분당구 판교역로50번길 19",
+      "dist_from_school": 1.08,
+      "region": "성남"
+    },
+    {
+      "name": "매송중학교",
+      "type": "gangnam",
+      "lat": 37.397125639,
+      "lon": 127.1228507179,
+      "addr": "경기도 성남시 분당구 탄천로 49",
+      "dist_from_school": 1.08,
+      "region": "성남"
+    },
+    {
+      "name": "낙원중학교",
+      "type": "gangnam",
+      "lat": 37.3991828265,
+      "lon": 127.0961765502,
+      "addr": "경기도 성남시 분당구 서판교로132번길 11",
+      "dist_from_school": 1.33,
+      "region": "성남"
+    },
+    {
+      "name": "이매중학교",
+      "type": "gangnam",
+      "lat": 37.4019403074,
+      "lon": 127.1261032018,
+      "addr": "경기도 성남시 분당구 양현로 194",
+      "dist_from_school": 1.51,
+      "region": "성남"
+    },
+    {
+      "name": "영성중학교",
+      "type": "gangnam",
+      "lat": 37.4272078357,
+      "lon": 127.1472827254,
+      "addr": "경기도 성남시 중원구 둔촌대로248번길 7",
+      "dist_from_school": 1.58,
+      "region": "성남"
+    },
+    {
+      "name": "성남서중학교",
+      "type": "gangnam",
+      "lat": 37.4491133179,
+      "lon": 127.1541103352,
+      "addr": "경기도 성남시 수정구 희망로 496",
+      "dist_from_school": 1.86,
+      "region": "성남"
+    },
+    {
+      "name": "송림중학교",
+      "type": "gangnam",
+      "lat": 37.3915103505,
+      "lon": 127.1315211331,
+      "addr": "경기도 성남시 분당구 이매로 100",
+      "dist_from_school": 1.91,
+      "region": "성남"
+    },
+    {
+      "name": "판교중학교",
+      "type": "gangnam",
+      "lat": 37.3872820477,
+      "lon": 127.0875873052,
+      "addr": "경기도 성남시 분당구 판교원로 193",
+      "dist_from_school": 2.26,
+      "region": "성남"
+    },
+    {
+      "name": "야탑중학교",
+      "type": "gangnam",
+      "lat": 37.4161260367,
+      "lon": 127.1312310604,
+      "addr": "경기도 성남시 분당구 양현로 442",
+      "dist_from_school": 2.6,
+      "region": "성남"
+    },
+    {
+      "name": "성남동중학교",
+      "type": "gangnam",
+      "lat": 37.4487367579,
+      "lon": 127.1641854569,
+      "addr": "경기도 성남시 중원구 광명로361번길 23",
+      "dist_from_school": 2.61,
+      "region": "성남"
+    },
+    {
+      "name": "서현중학교",
+      "type": "gangnam",
+      "lat": 37.380835872,
+      "lon": 127.1337308086,
+      "addr": "경기도 성남시 분당구 중앙공원로 54-1",
+      "dist_from_school": 2.64,
+      "region": "성남"
+    },
+    {
+      "name": "가락중학교",
+      "addr": "서울특별시 송파구 송이로 45",
+      "lat": 37.5025,
+      "lon": 127.1188,
+      "type": "gangnam",
+      "region": "서울_강서양천",
+      "dist_from_school": 0
+    },
+    {
+      "name": "오주중학교",
+      "addr": "서울특별시 송파구 동남로 281",
+      "lat": 37.5015,
+      "lon": 127.1363,
+      "type": "gangnam",
+      "region": "서울_강서양천",
+      "dist_from_school": 0
+    },
+    {
+      "name": "세곡중학교",
+      "addr": "서울특별시 강남구 자곡로 81",
+      "lat": 37.472,
+      "lon": 127.0919,
+      "type": "gangnam",
+      "region": "서울_강서양천",
+      "dist_from_school": 0
     }
   ],
   "this_week_bangwha": [
@@ -1573,6 +2185,351 @@
       "addr": "인천광역시 계양구 당미길 56",
       "dist_from_school": 5.13,
       "region": "인천"
+    },
+    {
+      "name": "진산중학교",
+      "type": "bangwha",
+      "lat": 37.50945861,
+      "lon": 126.74031,
+      "addr": "인천광역시 부평구 충선로234번길 70",
+      "dist_from_school": 9.98,
+      "region": "인천"
+    },
+    {
+      "name": "부평여자중학교",
+      "type": "bangwha",
+      "lat": 37.49559607,
+      "lon": 126.7387291,
+      "addr": "인천광역시 부평구 부평문화로 193-1",
+      "dist_from_school": 11.25,
+      "region": "인천"
+    },
+    {
+      "name": "삼산중학교",
+      "type": "bangwha",
+      "lat": 37.51666884,
+      "lon": 126.7361057,
+      "addr": "인천광역시 부평구 충선로 308",
+      "dist_from_school": 9.67,
+      "region": "인천"
+    },
+    {
+      "name": "무학중학교",
+      "type": "bangwha",
+      "lat": 37.55768336,
+      "lon": 127.0319746,
+      "addr": "서울특별시 성동구 행당로 120",
+      "dist_from_school": 19.13,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "부흥중학교",
+      "type": "bangwha",
+      "lat": 37.50305987,
+      "lon": 126.7367691,
+      "addr": "인천광역시 부평구 충선로 152",
+      "dist_from_school": 10.72,
+      "region": "인천"
+    },
+    {
+      "name": "부평중학교",
+      "type": "bangwha",
+      "lat": 37.50190044,
+      "lon": 126.7293422,
+      "addr": "인천광역시 부평구 부흥북로57번길 10",
+      "dist_from_school": 11.25,
+      "region": "인천"
+    },
+    {
+      "name": "이화여자대학교사범대학부속이화·금란중학교",
+      "type": "bangwha",
+      "lat": 37.56264282,
+      "lon": 126.9444886,
+      "addr": "서울특별시 서대문구 성산로 520",
+      "dist_from_school": 11.41,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "동마중학교",
+      "type": "bangwha",
+      "lat": 37.56280251,
+      "lon": 127.0403512,
+      "addr": "서울특별시 성동구 마조로11길 18",
+      "dist_from_school": 19.81,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "구산중학교",
+      "type": "bangwha",
+      "lat": 37.5046493,
+      "lon": 126.7418432,
+      "addr": "인천광역시 부평구 수변로 199",
+      "dist_from_school": 10.29,
+      "region": "인천",
+      "teacher": ""
+    },
+    {
+      "name": "성수중학교",
+      "type": "bangwha",
+      "lat": 37.54734181,
+      "lon": 127.0382534,
+      "addr": "서울특별시 성동구 서울숲길 18",
+      "dist_from_school": 19.83,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "부일중학교",
+      "type": "bangwha",
+      "lat": 37.52074703,
+      "lon": 126.7405096,
+      "addr": "인천광역시 부평구 영성로 3",
+      "dist_from_school": 9.07,
+      "region": "인천"
+    },
+    {
+      "name": "부광중학교",
+      "type": "bangwha",
+      "lat": 37.50101254,
+      "lon": 126.7374688,
+      "addr": "인천광역시 부평구 충선로 140",
+      "dist_from_school": 10.85,
+      "region": "인천"
+    },
+    {
+      "name": "갈산중학교",
+      "type": "bangwha",
+      "lat": 37.5102242,
+      "lon": 126.7265421,
+      "addr": "인천광역시 부평구 주부토로 166",
+      "dist_from_school": 10.77,
+      "region": "인천"
+    },
+    {
+      "name": "광성중학교",
+      "type": "bangwha",
+      "lat": 37.46755095,
+      "lon": 126.6395666,
+      "addr": "인천광역시 중구 참외전로244번길 47",
+      "dist_from_school": 19.7,
+      "region": "인천",
+      "teacher": ""
+    },
+    {
+      "name": "옥정중학교",
+      "type": "bangwha",
+      "lat": 37.54167037,
+      "lon": 127.0129832,
+      "addr": "서울특별시 성동구 한림말길 11",
+      "dist_from_school": 17.76,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "배문중학교",
+      "type": "bangwha",
+      "lat": 37.54991872,
+      "lon": 126.9639041,
+      "addr": "서울특별시 용산구 효창원로 258",
+      "dist_from_school": 13.34,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "부평동중학교",
+      "type": "bangwha",
+      "lat": 37.49665352,
+      "lon": 126.7408276,
+      "addr": "인천광역시 부평구 수변로107번길 4",
+      "dist_from_school": 11.05,
+      "region": "인천"
+    },
+    {
+      "name": "한양대학교사범대학부속중학교",
+      "type": "bangwha",
+      "lat": 37.56191884,
+      "lon": 127.042324,
+      "addr": "서울특별시 성동구 마조로 42",
+      "dist_from_school": 19.99,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "성남중학교",
+      "type": "bangwha",
+      "lat": 37.50528157,
+      "lon": 126.9266153,
+      "addr": "서울특별시 동작구 대방동길 74",
+      "dist_from_school": 12.52,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "동명여자중학교",
+      "type": "bangwha",
+      "lat": 37.56861542,
+      "lon": 126.9622529,
+      "addr": "서울특별시 서대문구 독립문로 49",
+      "dist_from_school": 12.9,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "숭문중학교",
+      "type": "bangwha",
+      "lat": 37.55089081,
+      "lon": 126.9457689,
+      "addr": "서울특별시 마포구 숭문길 99",
+      "dist_from_school": 11.76,
+      "region": "서울_서북"
+    },
+    {
+      "name": "경성중학교",
+      "type": "bangwha",
+      "lat": 37.56351064,
+      "lon": 126.9191663,
+      "addr": "서울특별시 마포구 성미산로 111",
+      "dist_from_school": 9.18,
+      "region": "서울_서북"
+    },
+    {
+      "name": "서연중학교",
+      "type": "bangwha",
+      "lat": 37.56822527,
+      "lon": 126.9273336,
+      "addr": "서울특별시 서대문구 연희로11마길 9-6",
+      "dist_from_school": 9.83,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "광성중학교",
+      "type": "bangwha",
+      "lat": 37.54869756,
+      "lon": 126.9359696,
+      "addr": "서울특별시 마포구 신수로8길 20",
+      "dist_from_school": 10.99,
+      "region": "서울_서북"
+    },
+    {
+      "name": "인창중학교",
+      "type": "bangwha",
+      "lat": 37.56488513,
+      "lon": 126.9640232,
+      "addr": "서울특별시 서대문구 경기대로 65",
+      "dist_from_school": 13.09,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "성일중학교",
+      "type": "bangwha",
+      "lat": 37.58185023,
+      "lon": 127.0338291,
+      "addr": "서울특별시 동대문구 왕산로23길 55",
+      "dist_from_school": 19.19,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "환일중학교",
+      "type": "bangwha",
+      "lat": 37.55360775,
+      "lon": 126.9628071,
+      "addr": "서울특별시 중구 환일길 47",
+      "dist_from_school": 13.16,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "서울여자중학교",
+      "type": "bangwha",
+      "lat": 37.5477805,
+      "lon": 126.94907,
+      "addr": "서울특별시 마포구 백범로25길 34",
+      "dist_from_school": 12.13,
+      "region": "서울_서북",
+      "teacher": ""
+    },
+    {
+      "name": "창덕여자중학교",
+      "type": "bangwha",
+      "lat": 37.5664328,
+      "lon": 126.9692102,
+      "addr": "서울특별시 중구 정동길 22",
+      "dist_from_school": 13.53,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "아현중학교",
+      "type": "bangwha",
+      "lat": 37.55640071,
+      "lon": 126.9565,
+      "addr": "서울특별시 마포구 마포대로 247",
+      "dist_from_school": 12.56,
+      "region": "서울_서북"
+    },
+    {
+      "name": "부일중학교",
+      "type": "bangwha",
+      "lat": 37.46623463,
+      "lon": 126.7997359,
+      "addr": "경기도 부천시 소사구 소사로 86",
+      "dist_from_school": 12.29,
+      "region": "부천"
+    },
+    {
+      "name": "한성중학교",
+      "type": "bangwha",
+      "lat": 37.55909644,
+      "lon": 126.9544565,
+      "addr": "서울특별시 서대문구 북아현로1길 24",
+      "dist_from_school": 12.33,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "중앙여자중학교",
+      "type": "bangwha",
+      "lat": 37.56317672,
+      "lon": 126.9540593,
+      "addr": "서울특별시 서대문구 북아현로11가길 7",
+      "dist_from_school": 12.24,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "광희중학교",
+      "type": "bangwha",
+      "lat": 37.55115453,
+      "lon": 127.03398,
+      "addr": "서울특별시 성동구 독서당로62길 46",
+      "dist_from_school": 19.4,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "마장중학교",
+      "type": "bangwha",
+      "lat": 37.56830949,
+      "lon": 127.042128,
+      "addr": "서울특별시 성동구 마장로35나길 31",
+      "dist_from_school": 19.93,
+      "region": "서울_강서양천"
+    },
+    {
+      "name": "구산중학교",
+      "type": "bangwha",
+      "lat": 37.60987202,
+      "lon": 126.9094887,
+      "addr": "서울특별시 은평구 갈현로15길 20-23",
+      "dist_from_school": 9.04,
+      "region": "서울_서북"
+    },
+    {
+      "name": "창천중학교",
+      "type": "bangwha",
+      "lat": 37.55498958,
+      "lon": 126.9392951,
+      "addr": "서울특별시 마포구 백범로1길 56",
+      "dist_from_school": 11.1,
+      "region": "서울_서북"
+    },
+    {
+      "name": "대신중학교",
+      "type": "bangwha",
+      "lat": 37.57310947,
+      "lon": 126.9612545,
+      "addr": "서울특별시 종로구 사직로 9",
+      "dist_from_school": 12.79,
+      "region": "서울_강서양천"
     }
   ],
   "unvisited_bangwha": [
@@ -2198,15 +3155,6 @@
       "region": "인천"
     },
     {
-      "name": "진산중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.50945861,
-      "lon": 126.74031,
-      "addr": "인천광역시 부평구 충선로234번길 70",
-      "dist_from_school": 9.98,
-      "region": "인천"
-    },
-    {
       "name": "청천중학교",
       "type": "unvisited_bangwha",
       "lat": 37.51173257,
@@ -2287,15 +3235,6 @@
       "dist_from_school": 11.98,
       "region": "서울_서북",
       "teacher": ""
-    },
-    {
-      "name": "부평여자중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.49559607,
-      "lon": 126.7387291,
-      "addr": "인천광역시 부평구 부평문화로 193-1",
-      "dist_from_school": 11.25,
-      "region": "인천"
     },
     {
       "name": "제물포중학교",
@@ -2381,15 +3320,6 @@
       "region": "인천"
     },
     {
-      "name": "삼산중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.51666884,
-      "lon": 126.7361057,
-      "addr": "인천광역시 부평구 충선로 308",
-      "dist_from_school": 9.67,
-      "region": "인천"
-    },
-    {
       "name": "문일중학교",
       "type": "unvisited_bangwha",
       "lat": 37.44891526,
@@ -2399,30 +3329,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "무학중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.55768336,
-      "lon": 127.0319746,
-      "addr": "서울특별시 성동구 행당로 120",
-      "dist_from_school": 19.13,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "남인천여자중학교",
       "type": "unvisited_bangwha",
       "lat": 37.44511845,
       "lon": 126.6940513,
       "addr": "인천광역시 미추홀구 인하로 426",
       "dist_from_school": 18.11,
-      "region": "인천"
-    },
-    {
-      "name": "부흥중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.50305987,
-      "lon": 126.7367691,
-      "addr": "인천광역시 부평구 충선로 152",
-      "dist_from_school": 10.72,
       "region": "인천"
     },
     {
@@ -2444,30 +3356,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "강남중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.50276263,
-      "lon": 126.9233466,
-      "addr": "서울특별시 동작구 대방동15길 29",
-      "dist_from_school": 12.48,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "만수여자중학교",
       "type": "unvisited_bangwha",
       "lat": 37.45920281,
       "lon": 126.7339412,
       "addr": "인천광역시 남동구 만수로50번길 22-36",
       "dist_from_school": 14.88,
-      "region": "인천"
-    },
-    {
-      "name": "부평중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.50190044,
-      "lon": 126.7293422,
-      "addr": "인천광역시 부평구 부흥북로57번길 10",
-      "dist_from_school": 11.25,
       "region": "인천"
     },
     {
@@ -2534,15 +3428,6 @@
       "region": "인천"
     },
     {
-      "name": "이화여자대학교사범대학부속이화·금란중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56264282,
-      "lon": 126.9444886,
-      "addr": "서울특별시 서대문구 성산로 520",
-      "dist_from_school": 11.41,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "석정중학교",
       "type": "unvisited_bangwha",
       "lat": 37.46921025,
@@ -2595,24 +3480,6 @@
       "addr": "인천광역시 남동구 인수로 13",
       "dist_from_school": 15.16,
       "region": "인천"
-    },
-    {
-      "name": "신현중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.51991492,
-      "lon": 126.6642505,
-      "addr": "인천광역시 서구 원창로131번길 23",
-      "dist_from_school": 14.78,
-      "region": "인천"
-    },
-    {
-      "name": "동마중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56280251,
-      "lon": 127.0403512,
-      "addr": "서울특별시 성동구 마조로11길 18",
-      "dist_from_school": 19.81,
-      "region": "서울_강서양천"
     },
     {
       "name": "안양중학교",
@@ -2732,34 +3599,6 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "구산중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.5046493,
-      "lon": 126.7418432,
-      "addr": "인천광역시 부평구 수변로 199",
-      "dist_from_school": 10.29,
-      "region": "인천",
-      "teacher": ""
-    },
-    {
-      "name": "성수중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.54734181,
-      "lon": 127.0382534,
-      "addr": "서울특별시 성동구 서울숲길 18",
-      "dist_from_school": 19.83,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "부일중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.52074703,
-      "lon": 126.7405096,
-      "addr": "인천광역시 부평구 영성로 3",
-      "dist_from_school": 9.07,
-      "region": "인천"
-    },
-    {
       "name": "광신중학교",
       "type": "unvisited_bangwha",
       "lat": 37.4644762,
@@ -2853,15 +3692,6 @@
       "region": "인천"
     },
     {
-      "name": "부광중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.50101254,
-      "lon": 126.7374688,
-      "addr": "인천광역시 부평구 충선로 140",
-      "dist_from_school": 10.85,
-      "region": "인천"
-    },
-    {
       "name": "신수중학교",
       "type": "unvisited_bangwha",
       "lat": 37.545923,
@@ -2879,16 +3709,6 @@
       "addr": "서울특별시 성북구 삼선교로16길 118",
       "dist_from_school": 17.25,
       "region": "서울_강서양천"
-    },
-    {
-      "name": "경인중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.49846566,
-      "lon": 126.8536725,
-      "addr": "서울특별시 구로구 경인로 301",
-      "dist_from_school": 9.24,
-      "region": "서울_서남",
-      "teacher": ""
     },
     {
       "name": "숭곡중학교",
@@ -3046,34 +3866,6 @@
       "teacher": ""
     },
     {
-      "name": "갈산중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.5102242,
-      "lon": 126.7265421,
-      "addr": "인천광역시 부평구 주부토로 166",
-      "dist_from_school": 10.77,
-      "region": "인천"
-    },
-    {
-      "name": "광성중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.46755095,
-      "lon": 126.6395666,
-      "addr": "인천광역시 중구 참외전로244번길 47",
-      "dist_from_school": 19.7,
-      "region": "인천",
-      "teacher": ""
-    },
-    {
-      "name": "옥정중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.54167037,
-      "lon": 127.0129832,
-      "addr": "서울특별시 성동구 한림말길 11",
-      "dist_from_school": 17.76,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "상도중학교",
       "type": "unvisited_bangwha",
       "lat": 37.4909219,
@@ -3128,15 +3920,6 @@
       "region": "인천"
     },
     {
-      "name": "인수중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.64386667,
-      "lon": 127.0099213,
-      "addr": "서울특별시 강북구 인수봉로75길 10",
-      "dist_from_school": 18.66,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "영원중학교",
       "type": "unvisited_bangwha",
       "lat": 37.51497419,
@@ -3166,15 +3949,6 @@
       "teacher": ""
     },
     {
-      "name": "배문중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.54991872,
-      "lon": 126.9639041,
-      "addr": "서울특별시 용산구 효창원로 258",
-      "dist_from_school": 13.34,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "신연중학교",
       "type": "unvisited_bangwha",
       "lat": 37.58271543,
@@ -3199,24 +3973,6 @@
       "lon": 126.9107916,
       "addr": "서울특별시 금천구 문성로 67",
       "dist_from_school": 13.72,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "부평동중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.49665352,
-      "lon": 126.7408276,
-      "addr": "인천광역시 부평구 수변로107번길 4",
-      "dist_from_school": 11.05,
-      "region": "인천"
-    },
-    {
-      "name": "한양대학교사범대학부속중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56191884,
-      "lon": 127.042324,
-      "addr": "서울특별시 성동구 마조로 42",
-      "dist_from_school": 19.99,
       "region": "서울_강서양천"
     },
     {
@@ -3374,15 +4130,6 @@
       "region": "서울_서남"
     },
     {
-      "name": "성남중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.50528157,
-      "lon": 126.9266153,
-      "addr": "서울특별시 동작구 대방동길 74",
-      "dist_from_school": 12.52,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "삼성중학교",
       "type": "unvisited_bangwha",
       "lat": 37.4676059,
@@ -3416,15 +4163,6 @@
       "lon": 126.9694475,
       "addr": "서울특별시 용산구 청파로 263",
       "dist_from_school": 14,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "동명여자중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56861542,
-      "lon": 126.9622529,
-      "addr": "서울특별시 서대문구 독립문로 49",
-      "dist_from_school": 12.9,
       "region": "서울_강서양천"
     },
     {
@@ -3518,30 +4256,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "숭문중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.55089081,
-      "lon": 126.9457689,
-      "addr": "서울특별시 마포구 숭문길 99",
-      "dist_from_school": 11.76,
-      "region": "서울_서북"
-    },
-    {
       "name": "안서중학교",
       "type": "unvisited_bangwha",
       "lat": 37.4383574,
       "lon": 126.8821568,
       "addr": "경기도 광명시 기아로13번안길 9-9",
       "dist_from_school": 16.38,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "연북중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.57758095,
-      "lon": 126.9384801,
-      "addr": "서울특별시 서대문구 연희로36길 32",
-      "dist_from_school": 10.78,
       "region": "서울_강서양천"
     },
     {
@@ -3581,15 +4301,6 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "경성중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56351064,
-      "lon": 126.9191663,
-      "addr": "서울특별시 마포구 성미산로 111",
-      "dist_from_school": 9.18,
-      "region": "서울_서북"
-    },
-    {
       "name": "부천동여자중학교",
       "type": "unvisited_bangwha",
       "lat": 37.48077502,
@@ -3605,15 +4316,6 @@
       "lon": 127.0357962,
       "addr": "서울특별시 강북구 월계로 61",
       "dist_from_school": 19.79,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "서연중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56822527,
-      "lon": 126.9273336,
-      "addr": "서울특별시 서대문구 연희로11마길 9-6",
-      "dist_from_school": 9.83,
       "region": "서울_강서양천"
     },
     {
@@ -3642,15 +4344,6 @@
       "addr": "인천광역시 서구 염곡로 409",
       "dist_from_school": 14.38,
       "region": "인천"
-    },
-    {
-      "name": "광성중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.54869756,
-      "lon": 126.9359696,
-      "addr": "서울특별시 마포구 신수로8길 20",
-      "dist_from_school": 10.99,
-      "region": "서울_서북"
     },
     {
       "name": "장원중학교",
@@ -3689,15 +4382,6 @@
       "region": "인천"
     },
     {
-      "name": "인창중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56488513,
-      "lon": 126.9640232,
-      "addr": "서울특별시 서대문구 경기대로 65",
-      "dist_from_school": 13.09,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "대방중학교",
       "type": "unvisited_bangwha",
       "lat": 37.49543678,
@@ -3723,15 +4407,6 @@
       "addr": "경기도 부천시 원미구 상일로 62",
       "dist_from_school": 11.22,
       "region": "부천"
-    },
-    {
-      "name": "성일중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.58185023,
-      "lon": 127.0338291,
-      "addr": "서울특별시 동대문구 왕산로23길 55",
-      "dist_from_school": 19.19,
-      "region": "서울_강서양천"
     },
     {
       "name": "중원중학교",
@@ -3761,15 +4436,6 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "환일중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.55360775,
-      "lon": 126.9628071,
-      "addr": "서울특별시 중구 환일길 47",
-      "dist_from_school": 13.16,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "세일중학교",
       "type": "unvisited_bangwha",
       "lat": 37.47459441,
@@ -3777,16 +4443,6 @@
       "addr": "서울특별시 금천구 시흥대로147길 34",
       "dist_from_school": 13.27,
       "region": "서울_강서양천"
-    },
-    {
-      "name": "서울여자중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.5477805,
-      "lon": 126.94907,
-      "addr": "서울특별시 마포구 백범로25길 34",
-      "dist_from_school": 12.13,
-      "region": "서울_서북",
-      "teacher": ""
     },
     {
       "name": "진관중학교",
@@ -3814,15 +4470,6 @@
       "addr": "인천광역시 서구 봉화로15번길 10",
       "dist_from_school": 16.08,
       "region": "인천"
-    },
-    {
-      "name": "창덕여자중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.5664328,
-      "lon": 126.9692102,
-      "addr": "서울특별시 중구 정동길 22",
-      "dist_from_school": 13.53,
-      "region": "서울_강서양천"
     },
     {
       "name": "신도중학교",
@@ -3935,15 +4582,6 @@
       "teacher": ""
     },
     {
-      "name": "아현중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.55640071,
-      "lon": 126.9565,
-      "addr": "서울특별시 마포구 마포대로 247",
-      "dist_from_school": 12.56,
-      "region": "서울_서북"
-    },
-    {
       "name": "봉일천중학교",
       "type": "unvisited_bangwha",
       "lat": 37.74768969,
@@ -3960,24 +4598,6 @@
       "addr": "서울특별시 성북구 길음로 144",
       "dist_from_school": 18.23,
       "region": "서울_강서양천"
-    },
-    {
-      "name": "덕수중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56557957,
-      "lon": 126.9969973,
-      "addr": "서울특별시 중구 마른내로9길 10",
-      "dist_from_school": 15.98,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "부일중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.46623463,
-      "lon": 126.7997359,
-      "addr": "경기도 부천시 소사구 소사로 86",
-      "dist_from_school": 12.29,
-      "region": "부천"
     },
     {
       "name": "부천부흥중학교",
@@ -4034,50 +4654,12 @@
       "region": "부천"
     },
     {
-      "name": "영등포중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.5080846,
-      "lon": 126.9331435,
-      "addr": "서울특별시 동작구 등용로8길 5",
-      "dist_from_school": 12.78,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "신양중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.65906492,
-      "lon": 126.6355015,
-      "addr": "경기도 김포시 양촌읍 양곡4로 243",
-      "dist_from_school": 18.4,
-      "region": "김포",
-      "teacher": ""
-    },
-    {
       "name": "배화여자중학교",
       "type": "unvisited_bangwha",
       "lat": 37.57954401,
       "lon": 126.9672919,
       "addr": "서울특별시 종로구 필운대로1길 34",
       "dist_from_school": 13.32,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "구일중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.49530091,
-      "lon": 126.8737702,
-      "addr": "서울특별시 구로구 구일로 90-133",
-      "dist_from_school": 10.31,
-      "region": "서울_서남",
-      "teacher": ""
-    },
-    {
-      "name": "한성중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.55909644,
-      "lon": 126.9544565,
-      "addr": "서울특별시 서대문구 북아현로1길 24",
-      "dist_from_school": 12.33,
       "region": "서울_강서양천"
     },
     {
@@ -4128,15 +4710,6 @@
       "teacher": ""
     },
     {
-      "name": "중앙여자중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56317672,
-      "lon": 126.9540593,
-      "addr": "서울특별시 서대문구 북아현로11가길 7",
-      "dist_from_school": 12.24,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "동구여자중학교",
       "type": "unvisited_bangwha",
       "lat": 37.5941935,
@@ -4152,24 +4725,6 @@
       "lon": 126.9120889,
       "addr": "서울특별시 관악구 문성로16길 40",
       "dist_from_school": 14.03,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "광희중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.55115453,
-      "lon": 127.03398,
-      "addr": "서울특별시 성동구 독서당로62길 46",
-      "dist_from_school": 19.4,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "마장중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.56830949,
-      "lon": 127.042128,
-      "addr": "서울특별시 성동구 마장로35나길 31",
-      "dist_from_school": 19.93,
       "region": "서울_강서양천"
     },
     {
@@ -4227,15 +4782,6 @@
       "region": "부천"
     },
     {
-      "name": "구산중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.60987202,
-      "lon": 126.9094887,
-      "addr": "서울특별시 은평구 갈현로15길 20-23",
-      "dist_from_school": 9.04,
-      "region": "서울_서북"
-    },
-    {
       "name": "은여울중학교",
       "type": "unvisited_bangwha",
       "lat": 37.63794171,
@@ -4281,15 +4827,6 @@
       "dist_from_school": 11.17,
       "region": "서울_서남",
       "teacher": ""
-    },
-    {
-      "name": "창천중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.55498958,
-      "lon": 126.9392951,
-      "addr": "서울특별시 마포구 백범로1길 56",
-      "dist_from_school": 11.1,
-      "region": "서울_서북"
     },
     {
       "name": "인천당하중학교",
@@ -4383,15 +4920,6 @@
       "region": "부천"
     },
     {
-      "name": "인왕중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.59427355,
-      "lon": 126.9484284,
-      "addr": "서울특별시 서대문구 세검정로4길 2",
-      "dist_from_school": 11.83,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "석천중학교",
       "type": "unvisited_bangwha",
       "lat": 37.50991836,
@@ -4454,15 +4982,6 @@
       "addr": "서울특별시 은평구 연서로41길 30",
       "dist_from_school": 11.23,
       "region": "서울_서북"
-    },
-    {
-      "name": "대신중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.57310947,
-      "lon": 126.9612545,
-      "addr": "서울특별시 종로구 사직로 9",
-      "dist_from_school": 12.79,
-      "region": "서울_강서양천"
     },
     {
       "name": "부천일신중학교",
@@ -4650,15 +5169,6 @@
       "teacher": ""
     },
     {
-      "name": "광남중학교",
-      "type": "unvisited_bangwha",
-      "lat": 37.47007475,
-      "lon": 126.8475588,
-      "addr": "경기도 광명시 광명로 785",
-      "dist_from_school": 12.1,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "계산중학교",
       "teacher": "",
       "type": "bangwha",
@@ -4797,24 +5307,6 @@
   ],
   "unvisited_gangnam": [
     {
-      "name": "위례솔중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.48701307,
-      "lon": 127.1505867,
-      "addr": "서울특별시 송파구 위례북로2길 10",
-      "dist_from_gangnam": 10.92,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "송례중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.47783301,
-      "lon": 127.1397415,
-      "addr": "서울특별시 송파구 위례순환로 429",
-      "dist_from_gangnam": 10.14,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "정신여자중학교",
       "type": "unvisited_gangnam",
       "lat": 37.50945384,
@@ -4824,48 +5316,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "오륜중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.51632395,
-      "lon": 127.1389238,
-      "addr": "서울특별시 송파구 양재대로 1242",
-      "dist_from_gangnam": 10.03,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "오주중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.50150661,
-      "lon": 127.1362653,
-      "addr": "서울특별시 송파구 동남로 281",
-      "dist_from_gangnam": 9.59,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "방이중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.51501058,
-      "lon": 127.1132445,
-      "addr": "서울특별시 송파구 오금로11길 64",
-      "dist_from_gangnam": 7.79,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "전일중학교",
       "type": "unvisited_gangnam",
       "lat": 37.58250018,
       "lon": 127.0583795,
       "addr": "서울특별시 동대문구 사가정로13길 67",
       "dist_from_gangnam": 9.79,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "가락중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.50248553,
-      "lon": 127.1187527,
-      "addr": "서울특별시 송파구 송이로 45",
-      "dist_from_gangnam": 8.06,
       "region": "서울_강서양천"
     },
     {
@@ -4887,24 +5343,6 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "거원중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.48772386,
-      "lon": 127.1465491,
-      "addr": "서울특별시 송파구 양산로2길 30",
-      "dist_from_gangnam": 10.55,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "오금중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.50527064,
-      "lon": 127.1288011,
-      "addr": "서울특별시 송파구 오금로35길 20",
-      "dist_from_gangnam": 8.96,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "인덕원중학교",
       "type": "unvisited_gangnam",
       "lat": 37.40224961,
@@ -4923,84 +5361,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "영파여자중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.53273562,
-      "lon": 127.1197395,
-      "addr": "서울특별시 송파구 올림픽로 565",
-      "dist_from_gangnam": 9,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "문현중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.48058417,
-      "lon": 127.1279464,
-      "addr": "서울특별시 송파구 충민로 99",
-      "dist_from_gangnam": 9.06,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "송파중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.49592462,
-      "lon": 127.1299138,
-      "addr": "서울특별시 송파구 동남로 203",
-      "dist_from_gangnam": 9.03,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "장평중학교",
       "type": "unvisited_gangnam",
       "lat": 37.56685961,
       "lon": 127.0704776,
       "addr": "서울특별시 동대문구 답십리로72길 158",
       "dist_from_gangnam": 8.54,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "석촌중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.50145499,
-      "lon": 127.1211174,
-      "addr": "서울특별시 송파구 송이로15길 13",
-      "dist_from_gangnam": 8.26,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "전농중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.58204428,
-      "lon": 127.0592794,
-      "addr": "서울특별시 동대문구 사가정로13길 71",
-      "dist_from_gangnam": 9.76,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "잠실중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.51781757,
-      "lon": 127.0986662,
-      "addr": "서울특별시 송파구 올림픽로35길 130",
-      "dist_from_gangnam": 6.65,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "가원중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.49099949,
-      "lon": 127.1231711,
-      "addr": "서울특별시 송파구 중대로10길 40-18",
-      "dist_from_gangnam": 8.47,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "행당중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.55455404,
-      "lon": 127.0419634,
-      "addr": "서울특별시 성동구 왕십리로 189",
-      "dist_from_gangnam": 6.42,
       "region": "서울_강서양천"
     },
     {
@@ -5013,30 +5379,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "수서중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.49120377,
-      "lon": 127.1023799,
-      "addr": "서울특별시 강남구 광평로59길 57",
-      "dist_from_gangnam": 6.64,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "숭인중학교",
       "type": "unvisited_gangnam",
       "lat": 37.57392046,
       "lon": 127.0440889,
       "addr": "서울특별시 동대문구 천호대로47길 34",
       "dist_from_gangnam": 8.57,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "감일백제중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.50986274,
-      "lon": 127.1509199,
-      "addr": "경기도 하남시 감일백제로 210",
-      "dist_from_gangnam": 10.96,
       "region": "서울_강서양천"
     },
     {
@@ -5049,84 +5397,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "동국대학교사범대학부속가람중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.54192936,
-      "lon": 127.0869731,
-      "addr": "서울특별시 광진구 광나루로36길 47",
-      "dist_from_gangnam": 7.16,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "광양중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.53089134,
-      "lon": 127.08617,
-      "addr": "서울특별시 광진구 자양로3길 7",
-      "dist_from_gangnam": 6.33,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "천일중학교",
       "type": "unvisited_gangnam",
       "lat": 37.54590987,
       "lon": 127.1276362,
       "addr": "서울특별시 강동구 천중로 57",
       "dist_from_gangnam": 10.31,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "경희여자중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.59394914,
-      "lon": 127.054891,
-      "addr": "서울특별시 동대문구 경희대로 26",
-      "dist_from_gangnam": 10.94,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "감일중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.50118776,
-      "lon": 127.1623407,
-      "addr": "경기도 하남시 감일백제로 55",
-      "dist_from_gangnam": 11.89,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "문정중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.48848095,
-      "lon": 127.1300209,
-      "addr": "서울특별시 송파구 문정로 73",
-      "dist_from_gangnam": 9.1,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "태평중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.44667267,
-      "lon": 127.1288292,
-      "addr": "경기도 성남시 수정구 제일로 223",
-      "dist_from_gangnam": 10.6,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "용곡중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.56595126,
-      "lon": 127.0890896,
-      "addr": "서울특별시 광진구 용마산로22길 76",
-      "dist_from_gangnam": 9.3,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "배명중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.4976895,
-      "lon": 127.0958118,
-      "addr": "서울특별시 송파구 삼학사로 11",
-      "dist_from_gangnam": 6.02,
       "region": "서울_강서양천"
     },
     {
@@ -5148,48 +5424,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "구의중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.5428503,
-      "lon": 127.0788404,
-      "addr": "서울특별시 광진구 광나루로30길 80",
-      "dist_from_gangnam": 6.73,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "광진중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.53221959,
-      "lon": 127.0901621,
-      "addr": "서울특별시 광진구 뚝섬로64길 45",
-      "dist_from_gangnam": 6.7,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "건국대학교사범대학부속중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.54172407,
-      "lon": 127.0815971,
-      "addr": "서울특별시 광진구 자양로 145-1",
-      "dist_from_gangnam": 6.81,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "과천문원중학교",
       "type": "unvisited_gangnam",
       "lat": 37.42339944,
       "lon": 126.9952942,
       "addr": "경기도 과천시 코오롱로 57",
       "dist_from_gangnam": 8.77,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "서울체육중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.52233038,
-      "lon": 127.1298226,
-      "addr": "서울특별시 송파구 강동대로 232",
-      "dist_from_gangnam": 9.41,
       "region": "서울_강서양천"
     },
     {
@@ -5202,78 +5442,6 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "보성중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.52008989,
-      "lon": 127.1357293,
-      "addr": "서울특별시 송파구 양재대로 1278",
-      "dist_from_gangnam": 9.85,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "수진중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.43711701,
-      "lon": 127.1236376,
-      "addr": "경기도 성남시 수정구 모란로 55",
-      "dist_from_gangnam": 10.84,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "광장중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.54717752,
-      "lon": 127.1019276,
-      "addr": "서울특별시 광진구 광장로1길 1",
-      "dist_from_gangnam": 8.54,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "자양중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.53539805,
-      "lon": 127.074384,
-      "addr": "서울특별시 광진구 뚝섬로41길 33",
-      "dist_from_gangnam": 5.86,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "성남여자중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.45023391,
-      "lon": 127.1427174,
-      "addr": "경기도 성남시 수정구 공원로 446",
-      "dist_from_gangnam": 11.46,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "풍성중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.52543858,
-      "lon": 127.1128839,
-      "addr": "서울특별시 송파구 강동대로2길 27",
-      "dist_from_gangnam": 8.12,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "세곡중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.47198073,
-      "lon": 127.0918862,
-      "addr": "서울특별시 강남구 자곡로 81",
-      "dist_from_gangnam": 6.36,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "경일중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.54382982,
-      "lon": 127.0478683,
-      "addr": "서울특별시 성동구 성수일로 27",
-      "dist_from_gangnam": 5.41,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "면목중학교",
       "type": "unvisited_gangnam",
       "lat": 37.58321586,
@@ -5283,57 +5451,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "창성중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.46072562,
-      "lon": 127.1540897,
-      "addr": "경기도 성남시 수정구 수정로 400",
-      "dist_from_gangnam": 11.9,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "과천중학교",
       "type": "unvisited_gangnam",
       "lat": 37.43314941,
       "lon": 126.9893133,
       "addr": "경기도 과천시 희망4길 33",
       "dist_from_gangnam": 7.96,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "중화중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.58450379,
-      "lon": 127.0945608,
-      "addr": "서울특별시 중랑구 용마산로 364",
-      "dist_from_gangnam": 11.29,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "잠신중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.51613937,
-      "lon": 127.087802,
-      "addr": "서울특별시 송파구 잠실로 12",
-      "dist_from_gangnam": 5.68,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "풍납중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.52536544,
-      "lon": 127.1156283,
-      "addr": "서울특별시 송파구 올림픽로43길 20",
-      "dist_from_gangnam": 8.34,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "보인중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.4975692,
-      "lon": 127.1395178,
-      "addr": "서울특별시 송파구 오금로49길 18",
-      "dist_from_gangnam": 9.87,
       "region": "서울_강서양천"
     },
     {
@@ -5355,84 +5478,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "잠실여자중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.50177714,
-      "lon": 127.1142413,
-      "addr": "서울특별시 송파구 송파대로38길 8",
-      "dist_from_gangnam": 7.65,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "신암중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.55636169,
-      "lon": 127.1336043,
-      "addr": "서울특별시 강동구 고덕로 65",
-      "dist_from_gangnam": 11.38,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "풍생중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.43504295,
-      "lon": 127.1314146,
-      "addr": "경기도 성남시 수정구 산성대로 111",
-      "dist_from_gangnam": 11.53,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "성내중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.52906191,
-      "lon": 127.1291173,
-      "addr": "서울특별시 강동구 성안로7길 36",
-      "dist_from_gangnam": 9.6,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "양진중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.54457517,
-      "lon": 127.0983485,
-      "addr": "서울특별시 광진구 워커힐로 32",
-      "dist_from_gangnam": 8.11,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "위례중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.47721139,
-      "lon": 127.1483118,
-      "addr": "경기도 하남시 위례순환로 343",
-      "dist_from_gangnam": 10.9,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "대원국제중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.56249279,
-      "lon": 127.0894181,
-      "addr": "서울특별시 광진구 용마산로22길 26",
-      "dist_from_gangnam": 9.01,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "덕장중학교",
       "type": "unvisited_gangnam",
       "lat": 37.39322824,
       "lon": 126.9988109,
       "addr": "경기도 의왕시 덕장로 55",
       "dist_from_gangnam": 11.92,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "둔촌중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.53083609,
-      "lon": 127.1463317,
-      "addr": "서울특별시 강동구 진황도로61길 25-30",
-      "dist_from_gangnam": 11.09,
       "region": "서울_강서양천"
     },
     {
@@ -5445,39 +5496,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "동북중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.52024061,
-      "lon": 127.1394507,
-      "addr": "서울특별시 강동구 강동대로 305",
-      "dist_from_gangnam": 10.17,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "한산중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.52890274,
-      "lon": 127.1403034,
-      "addr": "서울특별시 강동구 풍성로 251",
-      "dist_from_gangnam": 10.52,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "동신중학교",
       "type": "unvisited_gangnam",
       "lat": 37.53676952,
       "lon": 127.1343666,
       "addr": "서울특별시 강동구 진황도로 72",
       "dist_from_gangnam": 10.36,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "동대문중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.57452207,
-      "lon": 127.0519943,
-      "addr": "서울특별시 동대문구 사가정로 59",
-      "dist_from_gangnam": 8.78,
       "region": "서울_강서양천"
     },
     {
@@ -5490,15 +5514,6 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "해누리중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.49824464,
-      "lon": 127.1021919,
-      "addr": "서울특별시 송파구 송파대로37길 95",
-      "dist_from_gangnam": 6.58,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "내곡중학교",
       "type": "unvisited_gangnam",
       "lat": 37.45200325,
@@ -5508,48 +5523,12 @@
       "region": "서울_강서양천"
     },
     {
-      "name": "위례중앙중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.47188409,
-      "lon": 127.1382118,
-      "addr": "경기도 성남시 수정구 위례순환로 91",
-      "dist_from_gangnam": 10.18,
-      "region": "서울_강서양천"
-    },
-    {
       "name": "과천율목중학교",
       "type": "unvisited_gangnam",
       "lat": 37.40785863,
       "lon": 126.9822609,
       "addr": "경기도 과천시 과천대로2길 37",
       "dist_from_gangnam": 10.79,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "위례한빛중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.46797483,
-      "lon": 127.1486362,
-      "addr": "경기도 성남시 수정구 위례동로 85",
-      "dist_from_gangnam": 11.19,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "세륜중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.50893314,
-      "lon": 127.1312464,
-      "addr": "서울특별시 송파구 양재대로72길 41",
-      "dist_from_gangnam": 9.22,
-      "region": "서울_강서양천"
-    },
-    {
-      "name": "방산중학교",
-      "type": "unvisited_gangnam",
-      "lat": 37.50937287,
-      "lon": 127.1218756,
-      "addr": "서울특별시 송파구 오금로29길 31",
-      "dist_from_gangnam": 8.41,
       "region": "서울_강서양천"
     },
     {
@@ -5565,6 +5544,15 @@
       "dist_from_school": 17.73,
       "region": "서울_강서양천",
       "addr_full": "서울특별시 서초구 신반포로 56-7"
+    },
+    {
+      "name": "성원중학교",
+      "type": "unvisited_gangnam",
+      "lat": 37.5455,
+      "lon": 127.061,
+      "addr": "서울특별시 성동구 성덕정9가길 13",
+      "dist_from_school": 0,
+      "region": "서울_강서양천"
     }
   ]
 }
