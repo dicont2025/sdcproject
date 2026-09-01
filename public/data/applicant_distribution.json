@@ -1,0 +1,2504 @@
+{
+  "meta": {
+    "totalStudents": 221,
+    "totalSchools": 109,
+    "engTotal": 104,
+    "designTotal": 116,
+    "mappedSchools": 100,
+    "mappedStudents": 206,
+    "otherSchools": 9,
+    "otherStudents": 14,
+    "otherEng": 6,
+    "otherDesign": 8,
+    "unresolvedCount": 1
+  },
+  "ourSchool": {
+    "name": "서울디지털콘텐츠고등학교",
+    "lat": 37.57589067413874,
+    "lng": 126.8158506619891
+  },
+  "schools": [
+    {
+      "name": "세곡중학교",
+      "total": 19,
+      "eng": 16,
+      "design": 3,
+      "region": "서울 강남구",
+      "mapRegion": "seoul",
+      "lat": 37.4719525467879,
+      "lng": 127.091975314612,
+      "address": "서울 강남구 자곡동 617",
+      "near5": false,
+      "near9": false,
+      "dist5": 4620,
+      "dist9": 3416,
+      "station5": "오금",
+      "station9": "석촌고분"
+    },
+    {
+      "name": "용문중학교",
+      "total": 9,
+      "eng": 9,
+      "design": 0,
+      "region": "서울 성북구",
+      "mapRegion": "seoul",
+      "lat": 37.588738485266546,
+      "lng": 127.0244393454993,
+      "address": "서울 성북구 안암동2가 96-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 2904,
+      "dist9": 8795,
+      "station5": "동대문역사문화공원",
+      "station9": "삼성중앙"
+    },
+    {
+      "name": "목일중학교",
+      "total": 8,
+      "eng": 8,
+      "design": 0,
+      "region": "서울 양천구",
+      "mapRegion": "seoul",
+      "lat": 37.5134469624798,
+      "lng": 126.874190137821,
+      "address": "서울 양천구 신정동 330-2",
+      "near5": false,
+      "near9": false,
+      "dist5": 1237,
+      "dist9": 3225,
+      "station5": "오목교",
+      "station9": "선유도"
+    },
+    {
+      "name": "동암중학교",
+      "total": 8,
+      "eng": 8,
+      "design": 0,
+      "region": "경기도 의정부시",
+      "mapRegion": "metro",
+      "lat": 37.7217214210433,
+      "lng": 127.0584778308,
+      "address": "경기 의정부시 장암동 9-24",
+      "near5": false,
+      "near9": false,
+      "dist5": 17215,
+      "dist9": 22909,
+      "station5": "답십리",
+      "station9": "중앙보훈병원"
+    },
+    {
+      "name": "위례솔중학교",
+      "total": 7,
+      "eng": 1,
+      "design": 6,
+      "region": "서울시 송파구",
+      "mapRegion": "seoul",
+      "lat": 37.4872530826147,
+      "lng": 127.150349670085,
+      "address": "서울 송파구 거여동 649",
+      "near5": false,
+      "near9": false,
+      "dist5": 891,
+      "dist9": 3659,
+      "station5": "거여",
+      "station9": "올림픽공원"
+    },
+    {
+      "name": "송례중학교",
+      "total": 5,
+      "eng": 5,
+      "design": 0,
+      "region": "서울 송파구",
+      "mapRegion": "seoul",
+      "lat": 37.4778199794338,
+      "lng": 127.139705757768,
+      "address": "서울 송파구 장지동 899",
+      "near5": false,
+      "near9": false,
+      "dist5": 1762,
+      "dist9": 4212,
+      "station5": "거여",
+      "station9": "석촌"
+    },
+    {
+      "name": "증산중학교",
+      "total": 4,
+      "eng": 4,
+      "design": 0,
+      "region": "서울 은평구 증산동",
+      "mapRegion": "seoul",
+      "lat": 37.5836881123706,
+      "lng": 126.904196550075,
+      "address": "서울 은평구 증산동 산 24-4",
+      "near5": false,
+      "near9": false,
+      "dist5": 5720,
+      "dist9": 4759,
+      "station5": "애오개",
+      "station9": "신목동"
+    },
+    {
+      "name": "강신중학교",
+      "total": 4,
+      "eng": 3,
+      "design": 1,
+      "region": "서울시 양천구",
+      "mapRegion": "seoul",
+      "lat": 37.5152347251676,
+      "lng": 126.838742199647,
+      "address": "서울 양천구 신월동 1010",
+      "near5": false,
+      "near9": false,
+      "dist5": 1878,
+      "dist9": 4601,
+      "station5": "신정",
+      "station9": "등촌"
+    },
+    {
+      "name": "여의도중학교",
+      "total": 4,
+      "eng": 2,
+      "design": 2,
+      "region": "서울특별시 여의도동",
+      "mapRegion": "seoul",
+      "lat": 37.5238869479527,
+      "lng": 126.935916575272,
+      "address": "서울 영등포구 여의도동 40-1",
+      "near5": true,
+      "near9": false,
+      "dist5": 445,
+      "dist9": 983,
+      "station5": "여의나루",
+      "station9": "샛강"
+    },
+    {
+      "name": "수진중학교",
+      "total": 4,
+      "eng": 0,
+      "design": 4,
+      "region": "경기도 성남시 수정구",
+      "mapRegion": "metro",
+      "lat": 37.4371766845434,
+      "lng": 127.123950994205,
+      "address": "경기 성남시 수정구 수진동 4674",
+      "near5": false,
+      "near9": false,
+      "dist5": 6484,
+      "dist9": 7653,
+      "station5": "거여",
+      "station9": "석촌고분"
+    },
+    {
+      "name": "신월중학교",
+      "total": 3,
+      "eng": 1,
+      "design": 2,
+      "region": "서울시 양천구",
+      "mapRegion": "seoul",
+      "lat": 37.5410472972819,
+      "lng": 126.828991805646,
+      "address": "서울 양천구 신월동 17-6",
+      "near5": false,
+      "near9": false,
+      "dist5": 1013,
+      "dist9": 2857,
+      "station5": "화곡",
+      "station9": "마곡나루"
+    },
+    {
+      "name": "염창중학교",
+      "total": 3,
+      "eng": 3,
+      "design": 0,
+      "region": "서울 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.5537908804043,
+      "lng": 126.871514894022,
+      "address": "서울 강서구 염창동 85",
+      "near5": false,
+      "near9": true,
+      "dist5": 3053,
+      "dist9": 625,
+      "station5": "화곡",
+      "station9": "등촌"
+    },
+    {
+      "name": "화곡중학교",
+      "total": 3,
+      "eng": 2,
+      "design": 1,
+      "region": "서울시 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.5482361176441,
+      "lng": 126.833230287436,
+      "address": "서울 강서구 내발산동 715",
+      "near5": true,
+      "near9": false,
+      "dist5": 280,
+      "dist9": 2117,
+      "station5": "우장산",
+      "station9": "마곡나루"
+    },
+    {
+      "name": "신도봉중학교",
+      "total": 3,
+      "eng": 1,
+      "design": 2,
+      "region": "서울시  도봉구",
+      "mapRegion": "seoul",
+      "lat": 37.6496493918382,
+      "lng": 127.033342144533,
+      "address": "서울 도봉구 쌍문동 94-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 9325,
+      "dist9": 15240,
+      "station5": "마장",
+      "station9": "봉은사"
+    },
+    {
+      "name": "신서중학교",
+      "total": 3,
+      "eng": 2,
+      "design": 1,
+      "region": "서울시 양천구",
+      "mapRegion": "seoul",
+      "lat": 37.5158763932506,
+      "lng": 126.855572103218,
+      "address": "서울 양천구 신정동 310-6",
+      "near5": false,
+      "near9": false,
+      "dist5": 1019,
+      "dist9": 3855,
+      "station5": "신정",
+      "station9": "염창"
+    },
+    {
+      "name": "불광중학교",
+      "total": 3,
+      "eng": 0,
+      "design": 3,
+      "region": "서울시 은평구",
+      "mapRegion": "seoul",
+      "lat": 37.6233150325635,
+      "lng": 126.932179296878,
+      "address": "서울 은평구 불광동 173",
+      "near5": false,
+      "near9": false,
+      "dist5": 6943,
+      "dist9": 9606,
+      "station5": "광화문",
+      "station9": "증미"
+    },
+    {
+      "name": "중계중학교",
+      "total": 3,
+      "eng": 0,
+      "design": 3,
+      "region": "서울시 노원구",
+      "mapRegion": "seoul",
+      "lat": 37.6555081039944,
+      "lng": 127.075265963927,
+      "address": "서울 노원구 중계동 358-3",
+      "near5": false,
+      "near9": false,
+      "dist5": 10046,
+      "dist9": 15534,
+      "station5": "답십리",
+      "station9": "중앙보훈병원"
+    },
+    {
+      "name": "위례한빛중학교",
+      "total": 3,
+      "eng": 0,
+      "design": 3,
+      "region": "경기도 성남시",
+      "mapRegion": "metro",
+      "lat": 37.467892544743265,
+      "lng": 127.14865822657596,
+      "address": "경기 성남시 수정구 창곡동 568",
+      "near5": false,
+      "near9": false,
+      "dist5": 2861,
+      "dist9": 5560,
+      "station5": "거여",
+      "station9": "석촌"
+    },
+    {
+      "name": "용곡중학교",
+      "total": 3,
+      "eng": 0,
+      "design": 3,
+      "region": "서울시 광진구",
+      "mapRegion": "seoul",
+      "lat": 37.5661168883261,
+      "lng": 127.088935243662,
+      "address": "서울 광진구 중곡동 176-77",
+      "near5": false,
+      "near9": false,
+      "dist5": 1298,
+      "dist9": 6023,
+      "station5": "군자",
+      "station9": "한성백제"
+    },
+    {
+      "name": "양도중학교",
+      "total": 2,
+      "eng": 1,
+      "design": 1,
+      "region": "경기도 김포시",
+      "mapRegion": "metro",
+      "lat": 37.6046975728114,
+      "lng": 126.730705736044,
+      "address": "경기 김포시 풍무동 472-5",
+      "near5": false,
+      "near9": false,
+      "dist5": 7600,
+      "dist9": 6526,
+      "station5": "개화산",
+      "station9": "개화"
+    },
+    {
+      "name": "풍납중학교",
+      "total": 2,
+      "eng": 1,
+      "design": 1,
+      "region": "서울 강동구",
+      "mapRegion": "seoul",
+      "lat": 37.5256488309231,
+      "lng": 127.11654930778,
+      "address": "서울 송파구 풍납동 390",
+      "near5": false,
+      "near9": false,
+      "dist5": 1571,
+      "dist9": 1013,
+      "station5": "천호",
+      "station9": "한성백제"
+    },
+    {
+      "name": "명덕여자중학교",
+      "total": 2,
+      "eng": 2,
+      "design": 0,
+      "region": "서울 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.553377870946,
+      "lng": 126.834984284282,
+      "address": "서울 강서구 내발산동 169-1",
+      "near5": true,
+      "near9": false,
+      "dist5": 521,
+      "dist9": 1626,
+      "station5": "우장산",
+      "station9": "마곡나루"
+    },
+    {
+      "name": "풍무중학교",
+      "total": 2,
+      "eng": 2,
+      "design": 0,
+      "region": "경기도 김포시",
+      "mapRegion": "metro",
+      "lat": 37.60013037706673,
+      "lng": 126.72674745074522,
+      "address": "경기 김포시 풍무동 545-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 7693,
+      "dist9": 6638,
+      "station5": "개화산",
+      "station9": "개화"
+    },
+    {
+      "name": "김포한가람중학교",
+      "total": 2,
+      "eng": 2,
+      "design": 0,
+      "region": "경기도 김포시",
+      "mapRegion": "metro",
+      "lat": 37.6490963659726,
+      "lng": 126.623440311253,
+      "address": "경기 김포시 구래동 6873-6",
+      "near5": false,
+      "near9": false,
+      "dist5": 18259,
+      "dist9": 17185,
+      "station5": "개화산",
+      "station9": "개화"
+    },
+    {
+      "name": "낙원중학교",
+      "total": 2,
+      "eng": 2,
+      "design": 0,
+      "region": "경기도 성남시",
+      "mapRegion": "metro",
+      "lat": 37.3990281434196,
+      "lng": 127.096250032242,
+      "address": "경기 성남시 분당구 판교동 518",
+      "near5": false,
+      "near9": false,
+      "dist5": 11294,
+      "dist9": 11501,
+      "station5": "거여",
+      "station9": "석촌고분"
+    },
+    {
+      "name": "번동중학교",
+      "total": 2,
+      "eng": 2,
+      "design": 0,
+      "region": "서울 강북구",
+      "mapRegion": "seoul",
+      "lat": 37.6325154413651,
+      "lng": 127.036157677801,
+      "address": "서울 강북구 번동 231",
+      "near5": false,
+      "near9": false,
+      "dist5": 7405,
+      "dist9": 13320,
+      "station5": "마장",
+      "station9": "봉은사"
+    },
+    {
+      "name": "신반포중학교",
+      "total": 2,
+      "eng": 2,
+      "design": 0,
+      "region": "서울 서초구",
+      "mapRegion": "seoul",
+      "lat": 37.5060211341774,
+      "lng": 126.995788204283,
+      "address": "서울 서초구 반포동 3-1",
+      "near5": false,
+      "near9": true,
+      "dist5": 5770,
+      "dist9": 281,
+      "station5": "마포",
+      "station9": "신반포"
+    },
+    {
+      "name": "영남중학교",
+      "total": 2,
+      "eng": 2,
+      "design": 0,
+      "region": "서울시 영등포구",
+      "mapRegion": "seoul",
+      "lat": 37.497737155264105,
+      "lng": 126.89659398526852,
+      "address": "서울 영등포구 대림동 735",
+      "near5": false,
+      "near9": false,
+      "dist5": 2859,
+      "dist9": 3553,
+      "station5": "신길",
+      "station9": "샛강"
+    },
+    {
+      "name": "태랑중학교",
+      "total": 2,
+      "eng": 2,
+      "design": 0,
+      "region": "서울 노원구",
+      "mapRegion": "seoul",
+      "lat": 37.6268670596942,
+      "lng": 127.091363832297,
+      "address": "서울 노원구 공릉동 117",
+      "near5": false,
+      "near9": false,
+      "dist5": 7486,
+      "dist9": 12048,
+      "station5": "답십리",
+      "station9": "중앙보훈병원"
+    },
+    {
+      "name": "덕원중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "서울시 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.549830970476,
+      "lng": 126.829505877487,
+      "address": "서울 강서구 내발산동 58",
+      "near5": true,
+      "near9": false,
+      "dist5": 612,
+      "dist9": 1886,
+      "station5": "우장산",
+      "station9": "마곡나루"
+    },
+    {
+      "name": "화원중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "서울시 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.5367522012099,
+      "lng": 126.842574485942,
+      "address": "서울 강서구 화곡동 351-94",
+      "near5": true,
+      "near9": false,
+      "dist5": 576,
+      "dist9": 2555,
+      "station5": "화곡",
+      "station9": "등촌"
+    },
+    {
+      "name": "백석중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "서울시 강서구 등촌동",
+      "mapRegion": "seoul",
+      "lat": 37.5483237119528,
+      "lng": 126.858958714072,
+      "address": "서울 강서구 등촌동 520-5",
+      "near5": false,
+      "near9": true,
+      "dist5": 1792,
+      "dist9": 641,
+      "station5": "화곡",
+      "station9": "등촌"
+    },
+    {
+      "name": "인수중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "서울시 강북구",
+      "mapRegion": "seoul",
+      "lat": 37.6437864976942,
+      "lng": 127.00971722948,
+      "address": "서울 강북구 수유동 551",
+      "near5": false,
+      "near9": false,
+      "dist5": 8303,
+      "dist9": 15040,
+      "station5": "종로3가",
+      "station9": "삼성중앙"
+    },
+    {
+      "name": "인천검단가온중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "인천 서구",
+      "mapRegion": "metro",
+      "lat": 37.6091139888643,
+      "lng": 126.69927534532,
+      "address": "인천 검단구 불로동 1002-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 10311,
+      "dist9": 9256,
+      "station5": "개화산",
+      "station9": "개화"
+    },
+    {
+      "name": "수명중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "서울시 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.5489500361318,
+      "lng": 126.823537383052,
+      "address": "서울 강서구 내발산동 757",
+      "near5": false,
+      "near9": false,
+      "dist5": 1128,
+      "dist9": 1996,
+      "station5": "우장산",
+      "station9": "공항시장"
+    },
+    {
+      "name": "구룡중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "서울시 강남구",
+      "mapRegion": "seoul",
+      "lat": 37.4861027549873,
+      "lng": 127.056299149592,
+      "address": "서울 강남구 개포동 650",
+      "near5": false,
+      "near9": false,
+      "dist5": 6568,
+      "dist9": 2979,
+      "station5": "오금",
+      "station9": "선정릉"
+    },
+    {
+      "name": "계산여자중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "인천 계양구",
+      "mapRegion": "metro",
+      "lat": 37.5362056109203,
+      "lng": 126.732957136964,
+      "address": "인천 계양구 계산동 292",
+      "near5": false,
+      "near9": false,
+      "dist5": 6720,
+      "dist9": 7329,
+      "station5": "김포공항",
+      "station9": "개화"
+    },
+    {
+      "name": "수리중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "경기도 군포시",
+      "mapRegion": "metro",
+      "lat": 37.3612286595661,
+      "lng": 126.918513432893,
+      "address": "경기 군포시 산본동 1150",
+      "near5": false,
+      "near9": false,
+      "dist5": 17297,
+      "dist9": 16613,
+      "station5": "신길",
+      "station9": "동작"
+    },
+    {
+      "name": "당동중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "경기도 군포시",
+      "mapRegion": "metro",
+      "lat": 37.3452017231302,
+      "lng": 126.937147651072,
+      "address": "경기 군포시 당동 982-2",
+      "near5": false,
+      "near9": false,
+      "dist5": 19151,
+      "dist9": 17909,
+      "station5": "신길",
+      "station9": "동작"
+    },
+    {
+      "name": "성산중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "서울시 마포구",
+      "mapRegion": "seoul",
+      "lat": 37.5476680309745,
+      "lng": 126.915929994498,
+      "address": "서울 마포구 합정동 365-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 2733,
+      "dist9": 1852,
+      "station5": "여의나루",
+      "station9": "당산"
+    },
+    {
+      "name": "광성드림중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "경기도 고양시",
+      "mapRegion": "metro",
+      "lat": 37.67939,
+      "lng": 126.75674,
+      "address": "경기 고양시 일산서구 덕이동 329",
+      "near5": false,
+      "near9": false,
+      "dist5": 12349,
+      "dist9": 11779,
+      "station5": "방화",
+      "station9": "개화"
+    },
+    {
+      "name": "잠신중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "서울시 송파구",
+      "mapRegion": "seoul",
+      "lat": 37.5162238762902,
+      "lng": 127.08794846536,
+      "address": "서울 송파구 잠실동 22-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 3466,
+      "dist9": 1299,
+      "station5": "방이",
+      "station9": "삼전"
+    },
+    {
+      "name": "중앙여자중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "서울시 서대문구",
+      "mapRegion": "seoul",
+      "lat": 37.5620899891163,
+      "lng": 126.952594263538,
+      "address": "서울 서대문구 북아현동 190-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 1030,
+      "dist9": 4862,
+      "station5": "애오개",
+      "station9": "국회의사당"
+    },
+    {
+      "name": "부명중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "부천시 원미구",
+      "mapRegion": "metro",
+      "lat": 37.4979868726379,
+      "lng": 126.764250830999,
+      "address": "경기 부천시 원미구 중동 1176",
+      "near5": false,
+      "near9": false,
+      "dist5": 7851,
+      "dist9": 8372,
+      "station5": "김포공항",
+      "station9": "공항시장"
+    },
+    {
+      "name": "용유중학교",
+      "total": 2,
+      "eng": 0,
+      "design": 2,
+      "region": "인천 중구",
+      "mapRegion": "metro",
+      "lat": 37.448059027925,
+      "lng": 126.41293114662,
+      "address": "인천 영종구 남북동 584-2",
+      "near5": false,
+      "near9": false,
+      "dist5": 36576,
+      "dist9": 36834,
+      "station5": "김포공항",
+      "station9": "개화"
+    },
+    {
+      "name": "임학중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "인천광역시 계양구",
+      "mapRegion": "metro",
+      "lat": 37.5462411464723,
+      "lng": 126.740331001737,
+      "address": "인천 계양구 병방동 432-2",
+      "near5": false,
+      "near9": false,
+      "dist5": 5703,
+      "dist9": 6132,
+      "station5": "김포공항",
+      "station9": "개화"
+    },
+    {
+      "name": "양화중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울 영등포구",
+      "mapRegion": "seoul",
+      "lat": 37.5198005869505,
+      "lng": 126.896178939408,
+      "address": "서울 영등포구 문래동3가 48",
+      "near5": true,
+      "near9": false,
+      "dist5": 672,
+      "dist9": 1760,
+      "station5": "영등포구청",
+      "station9": "당산"
+    },
+    {
+      "name": "마포중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.5600256517208,
+      "lng": 126.852879255063,
+      "address": "서울 강서구 등촌동 82-1",
+      "near5": false,
+      "near9": true,
+      "dist5": 1919,
+      "dist9": 207,
+      "station5": "우장산",
+      "station9": "가양"
+    },
+    {
+      "name": "거원중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울시 송파구",
+      "mapRegion": "seoul",
+      "lat": 37.4879065938952,
+      "lng": 127.146540477381,
+      "address": "서울 송파구 거여동 296",
+      "near5": true,
+      "near9": false,
+      "dist5": 651,
+      "dist9": 3447,
+      "station5": "거여",
+      "station9": "올림픽공원"
+    },
+    {
+      "name": "신목중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울 양천구",
+      "mapRegion": "seoul",
+      "lat": 37.537015777274874,
+      "lng": 126.87289237500104,
+      "address": "서울 양천구 목동 902-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 1404,
+      "dist9": 1122,
+      "station5": "오목교",
+      "station9": "염창"
+    },
+    {
+      "name": "신수중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울 마포구",
+      "mapRegion": "seoul",
+      "lat": 37.5464647927042,
+      "lng": 126.933688374116,
+      "address": "서울 마포구 신수동 371-28",
+      "near5": false,
+      "near9": false,
+      "dist5": 1320,
+      "dist9": 2470,
+      "station5": "마포",
+      "station9": "국회의사당"
+    },
+    {
+      "name": "배재중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울 강동구",
+      "mapRegion": "seoul",
+      "lat": 37.555730180714,
+      "lng": 127.149606647946,
+      "address": "서울 강동구 고덕동 313",
+      "near5": true,
+      "near9": false,
+      "dist5": 409,
+      "dist9": 3041,
+      "station5": "고덕",
+      "station9": "중앙보훈병원"
+    },
+    {
+      "name": "상봉중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울 중랑구",
+      "mapRegion": "seoul",
+      "lat": 37.6014239773732,
+      "lng": 127.090286344277,
+      "address": "서울 중랑구 상봉동 282",
+      "near5": false,
+      "near9": false,
+      "dist5": 5009,
+      "dist9": 9601,
+      "station5": "장한평",
+      "station9": "중앙보훈병원"
+    },
+    {
+      "name": "남성중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울 동작구",
+      "mapRegion": "seoul",
+      "lat": 37.4790454417324,
+      "lng": 126.97244097358,
+      "address": "서울 동작구 사당동 304-45",
+      "near5": false,
+      "near9": false,
+      "dist5": 6354,
+      "dist9": 2704,
+      "station5": "신길",
+      "station9": "동작"
+    },
+    {
+      "name": "중동중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울시 강남구",
+      "mapRegion": "seoul",
+      "lat": 37.4887245952379,
+      "lng": 127.078562850789,
+      "address": "서울 강남구 일원동 692",
+      "near5": false,
+      "near9": false,
+      "dist5": 4606,
+      "dist9": 1923,
+      "station5": "오금",
+      "station9": "삼전"
+    },
+    {
+      "name": "신기중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "경기도 안양시",
+      "mapRegion": "metro",
+      "lat": 37.37911164620214,
+      "lng": 126.95925155789125,
+      "address": "경기 안양시 동안구 호계동 1075-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 15729,
+      "dist9": 13828,
+      "station5": "신길",
+      "station9": "구반포"
+    },
+    {
+      "name": "양동중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울 양천구",
+      "mapRegion": "seoul",
+      "lat": 37.5479820162672,
+      "lng": 126.868935718779,
+      "address": "서울 양천구 목동 600-6",
+      "near5": false,
+      "near9": true,
+      "dist5": 2459,
+      "dist9": 426,
+      "station5": "목동",
+      "station9": "등촌"
+    },
+    {
+      "name": "압구정중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울 강남구",
+      "mapRegion": "seoul",
+      "lat": 37.5302500040615,
+      "lng": 127.032931415938,
+      "address": "서울 강남구 압구정동 471",
+      "near5": false,
+      "near9": false,
+      "dist5": 2908,
+      "dist9": 2346,
+      "station5": "신금호",
+      "station9": "선정릉"
+    },
+    {
+      "name": "동마중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "서울시 성동구",
+      "mapRegion": "seoul",
+      "lat": 37.5627018257423,
+      "lng": 127.039935958803,
+      "address": "서울 성동구 마장동 405-45",
+      "near5": true,
+      "near9": false,
+      "dist5": 296,
+      "dist9": 5650,
+      "station5": "왕십리",
+      "station9": "삼성중앙"
+    },
+    {
+      "name": "검단중학교",
+      "total": 1,
+      "eng": 1,
+      "design": 0,
+      "region": "인천 서구",
+      "mapRegion": "metro",
+      "lat": 37.6039385927657,
+      "lng": 126.657564911769,
+      "address": "인천 검단구 마전동 908-2",
+      "near5": false,
+      "near9": false,
+      "dist5": 13549,
+      "dist9": 12601,
+      "station5": "김포공항",
+      "station9": "개화"
+    },
+    {
+      "name": "등원중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.5598115729951,
+      "lng": 126.8517252414,
+      "address": "서울 강서구 등촌동 707-4",
+      "near5": false,
+      "near9": true,
+      "dist5": 1827,
+      "dist9": 298,
+      "station5": "우장산",
+      "station9": "가양"
+    },
+    {
+      "name": "상암중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 마포구",
+      "mapRegion": "seoul",
+      "lat": 37.5790897397893,
+      "lng": 126.888144865456,
+      "address": "서울 마포구 상암동 1657",
+      "near5": false,
+      "near9": false,
+      "dist5": 5674,
+      "dist9": 3363,
+      "station5": "우장산",
+      "station9": "증미"
+    },
+    {
+      "name": "서운중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울특별시, 서초구",
+      "mapRegion": "seoul",
+      "lat": 37.4939920132111,
+      "lng": 127.02462442295,
+      "address": "서울 서초구 서초동 1325-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 6735,
+      "dist9": 1205,
+      "station5": "신금호",
+      "station9": "신논현"
+    },
+    {
+      "name": "함현중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "경기도 시흥시",
+      "mapRegion": "metro",
+      "lat": 37.36381505953726,
+      "lng": 126.73694224284543,
+      "address": "경기 시흥시 정왕동 1877-4",
+      "near5": false,
+      "near9": false,
+      "dist5": 20785,
+      "dist9": 23157,
+      "station5": "신정",
+      "station9": "공항시장"
+    },
+    {
+      "name": "백마중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "경기도 고양시 일산동구",
+      "mapRegion": "metro",
+      "lat": 37.6551276294017,
+      "lng": 126.793327997499,
+      "address": "경기 고양시 일산동구 마두동 733",
+      "near5": false,
+      "near9": false,
+      "dist5": 8790,
+      "dist9": 8544,
+      "station5": "방화",
+      "station9": "개화"
+    },
+    {
+      "name": "내곡중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 서초구",
+      "mapRegion": "seoul",
+      "lat": 37.45200307011806,
+      "lng": 127.05444496219532,
+      "address": "서울 서초구 신원동 294",
+      "near5": false,
+      "near9": false,
+      "dist5": 8553,
+      "dist9": 6404,
+      "station5": "오금",
+      "station9": "신논현"
+    },
+    {
+      "name": "등명중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.5601682911461,
+      "lng": 126.843294858665,
+      "address": "서울 강서구 등촌동 690-4",
+      "near5": false,
+      "near9": false,
+      "dist5": 1404,
+      "dist9": 887,
+      "station5": "우장산",
+      "station9": "양천향교"
+    },
+    {
+      "name": "은평중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 은평구",
+      "mapRegion": "seoul",
+      "lat": 37.6105987716446,
+      "lng": 126.908565466992,
+      "address": "서울 은평구 구산동 182-44",
+      "near5": false,
+      "near9": false,
+      "dist5": 7145,
+      "dist9": 7202,
+      "station5": "서대문",
+      "station9": "증미"
+    },
+    {
+      "name": "서울 장위중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 성북구",
+      "mapRegion": "seoul",
+      "lat": 37.6112826789867,
+      "lng": 127.041887306487,
+      "address": "서울 성북구 하월곡동 산 2-132",
+      "near5": false,
+      "near9": false,
+      "dist5": 5016,
+      "dist9": 10909,
+      "station5": "답십리",
+      "station9": "봉은사"
+    },
+    {
+      "name": "남서울중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 관악구",
+      "mapRegion": "seoul",
+      "lat": 37.4821038626225,
+      "lng": 126.921249614083,
+      "address": "서울 관악구 신림동 1690-3",
+      "near5": false,
+      "near9": false,
+      "dist5": 3865,
+      "dist9": 3906,
+      "station5": "신길",
+      "station9": "노량진"
+    },
+    {
+      "name": "일산양일중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "고양시 덕양구",
+      "mapRegion": "metro",
+      "lat": 37.6768129769599,
+      "lng": 126.815404270671,
+      "address": "경기 고양시 일산동구 식사동 1554",
+      "near5": false,
+      "near9": false,
+      "dist5": 11034,
+      "dist9": 11070,
+      "station5": "방화",
+      "station9": "개화"
+    },
+    {
+      "name": "역삼중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 강남구",
+      "mapRegion": "seoul",
+      "lat": 37.4959811922548,
+      "lng": 127.048653069784,
+      "address": "서울 강남구 역삼동 767-20",
+      "near5": false,
+      "near9": false,
+      "dist5": 6962,
+      "dist9": 1721,
+      "station5": "신금호",
+      "station9": "선정릉"
+    },
+    {
+      "name": "풍동중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "경기도 고양시 풍동",
+      "mapRegion": "metro",
+      "lat": 37.6709705442475,
+      "lng": 126.799645179934,
+      "address": "경기 고양시 일산동구 풍동 1260",
+      "near5": false,
+      "near9": false,
+      "dist5": 10447,
+      "dist9": 10302,
+      "station5": "방화",
+      "station9": "개화"
+    },
+    {
+      "name": "서울염창중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 강서구",
+      "mapRegion": "seoul",
+      "lat": 37.5537908804043,
+      "lng": 126.871514894022,
+      "address": "서울 강서구 염창동 85",
+      "near5": false,
+      "near9": true,
+      "dist5": 3053,
+      "dist9": 625,
+      "station5": "화곡",
+      "station9": "등촌"
+    },
+    {
+      "name": "동패중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "경기도 파주시",
+      "mapRegion": "metro",
+      "lat": 37.7085524264026,
+      "lng": 126.735810132201,
+      "address": "경기 파주시 동패동 1765",
+      "near5": false,
+      "near9": false,
+      "dist5": 16062,
+      "dist9": 15445,
+      "station5": "방화",
+      "station9": "개화"
+    },
+    {
+      "name": "창북중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 도봉구",
+      "mapRegion": "seoul",
+      "lat": 37.6500406955854,
+      "lng": 127.038359984824,
+      "address": "서울 도봉구 창동 683-7",
+      "near5": false,
+      "near9": false,
+      "dist5": 9321,
+      "dist9": 15221,
+      "station5": "답십리",
+      "station9": "봉은사"
+    },
+    {
+      "name": "강현중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 동작구",
+      "mapRegion": "seoul",
+      "lat": 37.503060037660624,
+      "lng": 126.9307637126858,
+      "address": "서울 동작구 상도동 335-5",
+      "near5": false,
+      "near9": false,
+      "dist5": 1878,
+      "dist9": 1472,
+      "station5": "신길",
+      "station9": "노량진"
+    },
+    {
+      "name": "신백현중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "경기도 성남시 분당구",
+      "mapRegion": "metro",
+      "lat": 37.3861204871332,
+      "lng": 127.110253467545,
+      "address": "경기 성남시 분당구 백현동 566",
+      "near5": false,
+      "near9": false,
+      "dist5": 12283,
+      "dist9": 12993,
+      "station5": "거여",
+      "station9": "석촌고분"
+    },
+    {
+      "name": "양천중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울특별시",
+      "mapRegion": "seoul",
+      "lat": 37.5197610705145,
+      "lng": 126.830805057577,
+      "address": "서울 양천구 신월동 948",
+      "near5": false,
+      "near9": false,
+      "dist5": 2306,
+      "dist9": 4610,
+      "station5": "신정",
+      "station9": "등촌"
+    },
+    {
+      "name": "공릉중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 노원구",
+      "mapRegion": "seoul",
+      "lat": 37.6223894338436,
+      "lng": 127.083700980477,
+      "address": "서울 노원구 공릉동 250",
+      "near5": false,
+      "near9": false,
+      "dist5": 6745,
+      "dist9": 11906,
+      "station5": "답십리",
+      "station9": "중앙보훈병원"
+    },
+    {
+      "name": "숭의여자중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 동작구",
+      "mapRegion": "seoul",
+      "lat": 37.508324420286,
+      "lng": 126.928926595857,
+      "address": "서울 동작구 대방동 20-114",
+      "near5": false,
+      "near9": false,
+      "dist5": 1324,
+      "dist9": 1007,
+      "station5": "신길",
+      "station9": "샛강"
+    },
+    {
+      "name": "당산서중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 영등포구",
+      "mapRegion": "seoul",
+      "lat": 37.5325609648934,
+      "lng": 126.898704612312,
+      "address": "서울 영등포구 당산동5가 5",
+      "near5": true,
+      "near9": true,
+      "dist5": 769,
+      "dist9": 424,
+      "station5": "영등포구청",
+      "station9": "당산"
+    },
+    {
+      "name": "고려대학교사범대학부속중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 성북구",
+      "mapRegion": "seoul",
+      "lat": 37.6103891190394,
+      "lng": 127.001032899831,
+      "address": "서울 성북구 정릉동 산 1-2",
+      "near5": false,
+      "near9": false,
+      "dist5": 4513,
+      "dist9": 11658,
+      "station5": "종로3가",
+      "station9": "노들"
+    },
+    {
+      "name": "신천중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 송파구",
+      "mapRegion": "seoul",
+      "lat": 37.5163133740326,
+      "lng": 127.078578189811,
+      "address": "서울 송파구 잠실동 19-4",
+      "near5": false,
+      "near9": true,
+      "dist5": 3902,
+      "dist9": 710,
+      "station5": "광나루",
+      "station9": "종합운동장"
+    },
+    {
+      "name": "성암여자중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 강북구",
+      "mapRegion": "seoul",
+      "lat": 37.6204236741663,
+      "lng": 127.024099703901,
+      "address": "서울 강북구 미아동 320-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 6232,
+      "dist9": 12219,
+      "station5": "종로3가",
+      "station9": "삼성중앙"
+    },
+    {
+      "name": "수유중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 강북구",
+      "mapRegion": "seoul",
+      "lat": 37.6318573634638,
+      "lng": 127.010780593847,
+      "address": "서울 강북구 수유동 491-61",
+      "near5": false,
+      "near9": false,
+      "dist5": 7026,
+      "dist9": 13735,
+      "station5": "종로3가",
+      "station9": "삼성중앙"
+    },
+    {
+      "name": "서울강북중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 강북구",
+      "mapRegion": "seoul",
+      "lat": 37.6451390450464,
+      "lng": 127.026305887171,
+      "address": "서울 강북구 수유동 694",
+      "near5": false,
+      "near9": false,
+      "dist5": 8836,
+      "dist9": 14858,
+      "station5": "종로3가",
+      "station9": "봉은사"
+    },
+    {
+      "name": "하남중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "경기도 하남시",
+      "mapRegion": "metro",
+      "lat": 37.5364521027154,
+      "lng": 127.222926486862,
+      "address": "경기 하남시 창우동 521-5",
+      "near5": true,
+      "near9": false,
+      "dist5": 374,
+      "dist9": 6631,
+      "station5": "하남검단산",
+      "station9": "중앙보훈병원"
+    },
+    {
+      "name": "신방학중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 도봉구 방학동",
+      "mapRegion": "seoul",
+      "lat": 37.6641129011156,
+      "lng": 127.029812463199,
+      "address": "서울 도봉구 방학동 307-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 10933,
+      "dist9": 16878,
+      "station5": "종로3가",
+      "station9": "봉은사"
+    },
+    {
+      "name": "청담중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 강남구",
+      "mapRegion": "seoul",
+      "lat": 37.5286457328131,
+      "lng": 127.045289342856,
+      "address": "서울 강남구 청담동 143",
+      "near5": false,
+      "near9": false,
+      "dist5": 3483,
+      "dist9": 1873,
+      "station5": "행당",
+      "station9": "삼성중앙"
+    },
+    {
+      "name": "영림중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 구로구",
+      "mapRegion": "seoul",
+      "lat": 37.4979549712812,
+      "lng": 126.890346787424,
+      "address": "서울 구로구 구로동 105-2",
+      "near5": false,
+      "near9": false,
+      "dist5": 3048,
+      "dist9": 3989,
+      "station5": "영등포시장",
+      "station9": "샛강"
+    },
+    {
+      "name": "경성중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 마포구",
+      "mapRegion": "seoul",
+      "lat": 37.5637732377837,
+      "lng": 126.919637980386,
+      "address": "서울 마포구 연남동 369-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 3462,
+      "dist9": 3556,
+      "station5": "애오개",
+      "station9": "당산"
+    },
+    {
+      "name": "월곡중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울 성북구",
+      "mapRegion": "seoul",
+      "lat": 37.6068834840817,
+      "lng": 127.048095537204,
+      "address": "서울 성북구 상월곡동 35-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 4455,
+      "dist9": 10355,
+      "station5": "답십리",
+      "station9": "봉은사"
+    },
+    {
+      "name": "위례중앙중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "경기도 성남시",
+      "mapRegion": "metro",
+      "lat": 37.4718318905538,
+      "lng": 127.138157171701,
+      "address": "경기 성남시 수정구 창곡동 503",
+      "near5": false,
+      "near9": false,
+      "dist5": 2441,
+      "dist9": 4637,
+      "station5": "거여",
+      "station9": "석촌"
+    },
+    {
+      "name": "신창중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 노원구",
+      "mapRegion": "seoul",
+      "lat": 37.6283957150362,
+      "lng": 127.047502194403,
+      "address": "서울 노원구 월계동 805-5",
+      "near5": false,
+      "near9": false,
+      "dist5": 6844,
+      "dist9": 12741,
+      "station5": "답십리",
+      "station9": "봉은사"
+    },
+    {
+      "name": "수서중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 강남구",
+      "mapRegion": "seoul",
+      "lat": 37.4910704831041,
+      "lng": 127.102514829977,
+      "address": "서울 강남구 수서동 710",
+      "near5": false,
+      "near9": false,
+      "dist5": 2560,
+      "dist9": 1373,
+      "station5": "오금",
+      "station9": "석촌고분"
+    },
+    {
+      "name": "중산중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "경기도 고양시",
+      "mapRegion": "metro",
+      "lat": 37.6914122046869,
+      "lng": 126.783499378579,
+      "address": "경기 고양시 일산동구 중산동 1575-2",
+      "near5": false,
+      "near9": false,
+      "dist5": 12916,
+      "dist9": 12628,
+      "station5": "방화",
+      "station9": "개화"
+    },
+    {
+      "name": "선일여자중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 은평구",
+      "mapRegion": "seoul",
+      "lat": 37.6198785073888,
+      "lng": 126.91274059679,
+      "address": "서울 은평구 갈현동 240-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 7666,
+      "dist9": 8259,
+      "station5": "서대문",
+      "station9": "증미"
+    },
+    {
+      "name": "연천중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 은평구",
+      "mapRegion": "seoul",
+      "lat": 37.6272863273394,
+      "lng": 126.925768448973,
+      "address": "서울 은평구 불광동 441-1",
+      "near5": false,
+      "near9": false,
+      "dist5": 7628,
+      "dist9": 9595,
+      "station5": "광화문",
+      "station9": "증미"
+    },
+    {
+      "name": "오륜중학교",
+      "total": 1,
+      "eng": 0,
+      "design": 1,
+      "region": "서울시 송파구",
+      "mapRegion": "seoul",
+      "lat": 37.5161966686144,
+      "lng": 127.138818061205,
+      "address": "서울 송파구 방이동 89-7",
+      "near5": true,
+      "near9": true,
+      "dist5": 693,
+      "dist9": 357,
+      "station5": "올림픽공원",
+      "station9": "둔촌오륜"
+    }
+  ],
+  "otherRegion": [
+    {
+      "school": "송정여자중학교",
+      "eng": 1,
+      "design": 2,
+      "total": 3,
+      "region": "경상북도 구미시",
+      "mapRegion": "other"
+    },
+    {
+      "school": "장곡중학교",
+      "eng": 2,
+      "design": 0,
+      "total": 2,
+      "region": "경상북도 칠곡군",
+      "mapRegion": "other"
+    },
+    {
+      "school": "대전전민중학교",
+      "eng": 2,
+      "design": 0,
+      "total": 2,
+      "region": "대전 유성구",
+      "mapRegion": "other"
+    },
+    {
+      "school": "삼현여자중학교",
+      "eng": 0,
+      "design": 2,
+      "total": 2,
+      "region": "경상남도 진주시",
+      "mapRegion": "other"
+    },
+    {
+      "school": "영산중학교",
+      "eng": 1,
+      "design": 0,
+      "total": 1,
+      "region": "전라남도 나주시",
+      "mapRegion": "other"
+    },
+    {
+      "school": "웅촌중학교",
+      "eng": 0,
+      "design": 1,
+      "total": 1,
+      "region": "울산관역시 울주군",
+      "mapRegion": "other"
+    },
+    {
+      "school": "대진중학교",
+      "eng": 0,
+      "design": 1,
+      "total": 1,
+      "region": "대구시 달서구",
+      "mapRegion": "other"
+    },
+    {
+      "school": "한일중학교",
+      "eng": 0,
+      "design": 1,
+      "total": 1,
+      "region": "충청북도 음성군",
+      "mapRegion": "other"
+    },
+    {
+      "school": "장검중학교",
+      "eng": 0,
+      "design": 1,
+      "total": 1,
+      "region": "울산 남구",
+      "mapRegion": "other"
+    }
+  ],
+  "stations": [
+    {
+      "name": "방화",
+      "lat": 37.5776031994404,
+      "lng": 126.812819296675,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "개화산",
+      "lat": 37.5725371505293,
+      "lng": 126.806814314979,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "김포공항",
+      "lat": 37.56196757232288,
+      "lng": 126.80191361988808,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "송정",
+      "lat": 37.5611612387718,
+      "lng": 126.812430347154,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "양평",
+      "lat": 37.5255796429707,
+      "lng": 126.886419282885,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "화곡",
+      "lat": 37.5416507925709,
+      "lng": 126.840455026335,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "우장산",
+      "lat": 37.54881618721654,
+      "lng": 126.83632627213518,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "신정",
+      "lat": 37.5250276134139,
+      "lng": 126.856097474225,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "목동",
+      "lat": 37.526135115923466,
+      "lng": 126.86462527157516,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "오목교",
+      "lat": 37.5245340839144,
+      "lng": 126.875307312696,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "영등포시장",
+      "lat": 37.522709383885,
+      "lng": 126.905179566968,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "영등포구청",
+      "lat": 37.5258305311402,
+      "lng": 126.89667739939,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "신길",
+      "lat": 37.51678703217714,
+      "lng": 126.91836721069228,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "여의나루",
+      "lat": 37.5271469489465,
+      "lng": 126.93298596744,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "여의도",
+      "lat": 37.5217753947299,
+      "lng": 126.924397990207,
+      "lines": [
+        5,
+        9
+      ]
+    },
+    {
+      "name": "마포",
+      "lat": 37.53955402908912,
+      "lng": 126.94586257221307,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "공덕",
+      "lat": 37.5445416897534,
+      "lng": 126.951451177648,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "충정로",
+      "lat": 37.55976328822766,
+      "lng": 126.96449207476172,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "애오개",
+      "lat": 37.5534131497489,
+      "lng": 126.956669363197,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "서대문",
+      "lat": 37.56575193662503,
+      "lng": 126.96663755850754,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "종로3가",
+      "lat": 37.570420844523,
+      "lng": 126.992153252476,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "을지로4가",
+      "lat": 37.5666405038268,
+      "lng": 126.997632059113,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "광화문",
+      "lat": 37.57164860977568,
+      "lng": 126.97642427981408,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "청구",
+      "lat": 37.5609165488093,
+      "lng": 127.014165812912,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "신금호",
+      "lat": 37.55447619249223,
+      "lng": 127.02049316578315,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "마장",
+      "lat": 37.5661389565959,
+      "lng": 127.042984855663,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "행당",
+      "lat": 37.5573637818732,
+      "lng": 127.029511840513,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "왕십리",
+      "lat": 37.561268363317176,
+      "lng": 127.03710337610202,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "동대문역사문화공원",
+      "lat": 37.56566440553802,
+      "lng": 127.00900417014896,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "답십리",
+      "lat": 37.56697480965114,
+      "lng": 127.05256127651293,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "장한평",
+      "lat": 37.5616038910656,
+      "lng": 127.06370373106944,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "군자",
+      "lat": 37.557151488837924,
+      "lng": 127.0795106156054,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "아차산",
+      "lat": 37.55224917071854,
+      "lng": 127.08956495447913,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "광나루",
+      "lat": 37.5452991715677,
+      "lng": 127.103521464507,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "천호",
+      "lat": 37.5385112120297,
+      "lng": 127.12392845044,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "강동",
+      "lat": 37.5358819145235,
+      "lng": 127.132396300314,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "상일동",
+      "lat": 37.5566778757215,
+      "lng": 127.165905758209,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "강일",
+      "lat": 37.5574259795986,
+      "lng": 127.175680183486,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "미사",
+      "lat": 37.562991348199,
+      "lng": 127.192490980441,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "하남풍산",
+      "lat": 37.5522898049699,
+      "lng": 127.204006631381,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "하남시청",
+      "lat": 37.5419775122576,
+      "lng": 127.206298162203,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "하남검단산",
+      "lat": 37.5398032640088,
+      "lng": 127.223219337317,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "길동",
+      "lat": 37.5378264874159,
+      "lng": 127.140021295948,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "굽은다리",
+      "lat": 37.54551759022203,
+      "lng": 127.14288387331297,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "명일",
+      "lat": 37.5513978958277,
+      "lng": 127.14404374474,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "고덕",
+      "lat": 37.55504766830918,
+      "lng": 127.15416500963447,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "둔촌동",
+      "lat": 37.52765684247226,
+      "lng": 127.13621464981398,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "올림픽공원",
+      "lat": 37.5163389870117,
+      "lng": 127.130963675401,
+      "lines": [
+        5,
+        9
+      ]
+    },
+    {
+      "name": "방이",
+      "lat": 37.5087506251989,
+      "lng": 127.126096046986,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "개롱",
+      "lat": 37.497968278388235,
+      "lng": 127.13507959838425,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "거여",
+      "lat": 37.4933304500736,
+      "lng": 127.143773841911,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "오금",
+      "lat": 37.5021388575469,
+      "lng": 127.127953219596,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "마천",
+      "lat": 37.4950381629493,
+      "lng": 127.152859864985,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "name": "개화",
+      "lat": 37.5783445148797,
+      "lng": 126.796891362602,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "공항시장",
+      "lat": 37.56368922800772,
+      "lng": 126.81060964296609,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "신방화",
+      "lat": 37.56748745669626,
+      "lng": 126.81723757150974,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "마곡나루",
+      "lat": 37.5667126094974,
+      "lng": 126.827420928424,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "양천향교",
+      "lat": 37.5680808809647,
+      "lng": 126.841978835328,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "가양",
+      "lat": 37.56143311719883,
+      "lng": 126.85442142615852,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "증미",
+      "lat": 37.558133059903305,
+      "lng": 126.86063675500975,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "등촌",
+      "lat": 37.550728980328884,
+      "lng": 126.86557100595411,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "염창",
+      "lat": 37.546982941543,
+      "lng": 126.874871603971,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "신목동",
+      "lat": 37.5442883741577,
+      "lng": 126.883095790252,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "선유도",
+      "lat": 37.53815865606546,
+      "lng": 126.89333386450167,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "당산",
+      "lat": 37.5347843171332,
+      "lng": 126.902611795523,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "국회의사당",
+      "lat": 37.5281465047706,
+      "lng": 126.91783895106,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "샛강",
+      "lat": 37.51737287009036,
+      "lng": 126.9283750591322,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "노량진",
+      "lat": 37.5135856714992,
+      "lng": 126.940893179777,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "노들",
+      "lat": 37.5126721234205,
+      "lng": 126.953096069577,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "흑석",
+      "lat": 37.5091654719404,
+      "lng": 126.963463063008,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "동작",
+      "lat": 37.50294134516106,
+      "lng": 126.97810272869033,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "구반포",
+      "lat": 37.5014398319603,
+      "lng": 126.987464905696,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "신반포",
+      "lat": 37.5035091412544,
+      "lng": 126.996082392175,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "고속터미널",
+      "lat": 37.50454885557265,
+      "lng": 127.00512100872538,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "사평",
+      "lat": 37.5042326273953,
+      "lng": 127.015272484531,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "신논현",
+      "lat": 37.504811111562,
+      "lng": 127.025492036104,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "언주",
+      "lat": 37.5073353959717,
+      "lng": 127.033970921595,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "선정릉",
+      "lat": 37.5109326388803,
+      "lng": 127.043627289129,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "삼성중앙",
+      "lat": 37.5129614511319,
+      "lng": 127.053043676912,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "봉은사",
+      "lat": 37.5142554489848,
+      "lng": 127.060233935114,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "종합운동장",
+      "lat": 37.5111446632705,
+      "lng": 127.073849447402,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "삼전",
+      "lat": 37.504549097056476,
+      "lng": 127.08736363126373,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "석촌고분",
+      "lat": 37.50246245994369,
+      "lng": 127.0965081858022,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "석촌",
+      "lat": 37.5054141216925,
+      "lng": 127.107004062699,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "송파나루",
+      "lat": 37.51101671275264,
+      "lng": 127.11266171422027,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "한성백제",
+      "lat": 37.5165379932802,
+      "lng": 127.116449169971,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "둔촌오륜",
+      "lat": 37.51940803726135,
+      "lng": 127.13865206962898,
+      "lines": [
+        9
+      ]
+    },
+    {
+      "name": "중앙보훈병원",
+      "lat": 37.52840258997037,
+      "lng": 127.14841167813621,
+      "lines": [
+        9
+      ]
+    }
+  ]
+}
