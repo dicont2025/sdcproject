@@ -123,6 +123,19 @@ app.delete('/api/admin/schools/:name', adminAuth, (req, res) => {
   res.json({ ok: true });
 });
 
+// ── promo teacher assignment ──────────────────────────
+app.put('/api/admin/promo/:name', adminAuth, (req, res) => {
+  const name = decodeURIComponent(req.params.name);
+  const { promo_teacher } = req.body;
+  const data = JSON.parse(fs.readFileSync(MAP_FILE, 'utf-8'));
+  const found = findSchool(data, name);
+  if (!found) return res.status(404).json({ error: '학교 없음' });
+  const { list, idx } = found;
+  data[list][idx].promo_teacher = (promo_teacher || '').trim();
+  fs.writeFileSync(MAP_FILE, JSON.stringify(data, null, 2), 'utf-8');
+  res.json({ ok: true });
+});
+
 // ── next-week teacher assignment ──────────────────────
 app.get('/api/nextweek-teachers', (req, res) => {
   res.json(loadTeachers());
