@@ -3,37 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SDC 홍보배정 관리</title>
+<title>SDC 홍보배정 현황</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Malgun Gothic', sans-serif; background: #f1f5f9; color: #1e293b; height: 100vh; overflow: hidden; }
-
-/* ── login ── */
-#login-screen {
-  position: fixed; inset: 0; background: #1e3a8a;
-  display: flex; align-items: center; justify-content: center; z-index: 999;
-}
-.login-box {
-  background: white; border-radius: 16px; padding: 40px 36px;
-  width: 320px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,.3);
-}
-.login-box h1 { font-size: 20px; font-weight: 800; color: #1e3a8a; margin-bottom: 4px; }
-.login-box p { font-size: 13px; color: #64748b; margin-bottom: 24px; }
-.login-box input {
-  width: 100%; padding: 10px 14px; border: 1.5px solid #e2e8f0;
-  border-radius: 8px; font-size: 15px; margin-bottom: 12px;
-  outline: none; text-align: center; letter-spacing: 2px;
-}
-.login-box input:focus { border-color: #1e3a8a; }
-.btn-login {
-  width: 100%; padding: 11px; background: #1e3a8a; color: white;
-  border: none; border-radius: 8px; font-size: 15px; cursor: pointer; font-weight: 700;
-}
-.btn-login:hover { background: #1e40af; }
-.login-err { color: #dc2626; font-size: 13px; margin-top: 10px; min-height: 18px; }
-
-/* ── layout ── */
-#main { display: none; flex-direction: column; height: 100vh; }
+body { font-family: 'Malgun Gothic', sans-serif; background: #f1f5f9; color: #1e293b; height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
 
 .topbar {
   background: white; border-bottom: 2px solid #1e3a8a;
@@ -50,12 +23,13 @@ body { font-family: 'Malgun Gothic', sans-serif; background: #f1f5f9; color: #1e
   padding: 5px 12px; border-radius: 6px; border: none;
   cursor: pointer; font-size: 12px; font-weight: 700;
 }
-.btn-logout { background: #f1f5f9; color: #64748b; }
-.btn-logout:hover { background: #e2e8f0; }
+.btn-admin { background: #f1f5f9; color: #475569; }
+.btn-admin:hover { background: #e2e8f0; }
+.btn-admin.on { background: #eff6ff; color: #1d4ed8; }
 
 .body { display: flex; flex: 1; overflow: hidden; }
 
-/* ── sidebar ── */
+/* ── 사이드바 ── */
 .sidebar {
   width: 300px; background: white; display: flex; flex-direction: column;
   border-right: 1.5px solid #e2e8f0; flex-shrink: 0;
@@ -83,48 +57,76 @@ body { font-family: 'Malgun Gothic', sans-serif; background: #f1f5f9; color: #1e
 .school-teacher { font-size: 11px; color: #64748b; margin-top: 1px; }
 .school-region { font-size: 10px; color: #94a3b8; }
 
-/* ── map ── */
+/* ── 지도 ── */
 #map { flex: 1; }
 
-/* ── edit panel (slide in from right) ── */
-#edit-panel {
+/* ── 정보 패널 (우측 슬라이드) ── */
+#info-panel {
   position: fixed; right: -340px; top: 42px; bottom: 0;
   width: 320px; background: white; box-shadow: -4px 0 20px rgba(0,0,0,.12);
   transition: right .2s; z-index: 100; display: flex; flex-direction: column;
   border-left: 1.5px solid #e2e8f0;
 }
-#edit-panel.open { right: 0; }
-.edit-header {
+#info-panel.open { right: 0; }
+.panel-header {
   padding: 14px 16px; border-bottom: 1px solid #f1f5f9;
   display: flex; align-items: center; gap: 8px;
 }
-.edit-header .dot-lg { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
-.edit-header h2 { font-size: 15px; font-weight: 800; flex: 1; }
-.btn-close {
-  background: none; border: none; cursor: pointer; font-size: 18px;
-  color: #94a3b8; line-height: 1;
-}
+.dot-lg { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+.panel-header h2 { font-size: 15px; font-weight: 800; flex: 1; }
+.btn-close { background: none; border: none; cursor: pointer; font-size: 18px; color: #94a3b8; }
 .btn-close:hover { color: #475569; }
-.edit-body { padding: 14px 16px; flex: 1; overflow-y: auto; }
+.panel-body { padding: 14px 16px; flex: 1; overflow-y: auto; }
 .info-row { margin-bottom: 10px; }
 .info-label { font-size: 10px; color: #94a3b8; font-weight: 700; text-transform: uppercase; margin-bottom: 2px; }
 .info-value { font-size: 13px; color: #1e293b; }
+
+/* 관리 영역 - 관리자 모드일 때만 표시 */
 .edit-footer { padding: 12px 16px; border-top: 1px solid #f1f5f9; }
 .teacher-select {
   width: 100%; padding: 8px 10px; border: 1.5px solid #e2e8f0;
-  border-radius: 8px; font-size: 13px; outline: none; font-family: inherit;
-  margin-bottom: 10px;
+  border-radius: 8px; font-size: 13px; outline: none; font-family: inherit; margin-bottom: 10px;
 }
 .teacher-select:focus { border-color: #3b82f6; }
 .btn-save {
   width: 100%; padding: 9px; background: #1e3a8a; color: white;
-  border: none; border-radius: 8px; font-size: 14px; font-weight: 700;
-  cursor: pointer;
+  border: none; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer;
 }
 .btn-save:hover { background: #1e40af; }
 .save-ok { color: #16a34a; font-size: 12px; text-align: center; margin-top: 6px; height: 16px; }
 
-/* ── legend ── */
+/* ── 관리자 비번 모달 ── */
+#admin-modal {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.45); z-index: 200;
+  align-items: center; justify-content: center;
+}
+#admin-modal.show { display: flex; }
+.modal-box {
+  background: white; border-radius: 14px; padding: 28px 28px 24px;
+  width: 280px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+.modal-box h3 { font-size: 16px; font-weight: 800; color: #1e3a8a; margin-bottom: 4px; }
+.modal-box p { font-size: 12px; color: #64748b; margin-bottom: 16px; }
+.modal-box input {
+  width: 100%; padding: 9px 12px; border: 1.5px solid #e2e8f0;
+  border-radius: 8px; font-size: 14px; margin-bottom: 10px;
+  outline: none; text-align: center; letter-spacing: 2px;
+}
+.modal-box input:focus { border-color: #1e3a8a; }
+.modal-btns { display: flex; gap: 8px; }
+.btn-confirm {
+  flex: 1; padding: 9px; background: #1e3a8a; color: white;
+  border: none; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer;
+}
+.btn-confirm:hover { background: #1e40af; }
+.btn-cancel {
+  padding: 9px 14px; background: #f1f5f9; color: #64748b;
+  border: none; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer;
+}
+.modal-err { color: #dc2626; font-size: 12px; margin-top: 6px; min-height: 16px; }
+
+/* ── 범례 ── */
 #legend {
   position: absolute; bottom: 24px; left: 310px;
   background: white; border-radius: 10px; padding: 10px 12px;
@@ -132,86 +134,88 @@ body { font-family: 'Malgun Gothic', sans-serif; background: #f1f5f9; color: #1e
   z-index: 10; font-size: 11px; min-width: 140px;
 }
 #legend h3 { font-size: 11px; font-weight: 800; color: #64748b; margin-bottom: 6px; }
-.legend-item { display: flex; align-items: center; gap: 5px; margin-bottom: 3px; }
+.legend-item { display: flex; align-items: center; gap: 5px; margin-bottom: 3px; cursor: pointer; }
 .legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
 </style>
 </head>
 <body>
 
-<!-- 로그인 -->
-<div id="login-screen">
-  <div class="login-box">
-    <h1>SDC 홍보배정 관리</h1>
-    <p>관리자 비밀번호를 입력하세요</p>
-    <input type="password" id="pw-input" placeholder="비밀번호" onkeydown="if(event.key==='Enter')doLogin()">
-    <button class="btn-login" onclick="doLogin()">로그인</button>
-    <div class="login-err" id="login-err"></div>
-  </div>
+<!-- 상단 바 -->
+<div class="topbar">
+  <h1>📋 SDC 홍보배정 현황</h1>
+  <span class="stat-badge" id="stat-total">로딩 중...</span>
+  <span class="stat-badge" id="stat-teachers" style="background:#f0fdf4;color:#15803d;"></span>
+  <div class="spacer"></div>
+  <a href="/map.html" style="text-decoration:none;"><button class="btn-sm" style="background:#f0fdf4;color:#15803d;">🗺 방문일정</button></a>
+  <button class="btn-sm btn-admin" id="btn-admin" onclick="toggleAdmin()">🔐 관리</button>
 </div>
 
-<!-- 메인 -->
-<div id="main">
-  <div class="topbar">
-    <h1>📋 SDC 홍보배정 관리</h1>
-    <span class="stat-badge" id="stat-total">0개 학교</span>
-    <span class="stat-badge" id="stat-teachers" style="background:#f0fdf4;color:#15803d;">0명 담당</span>
-    <div class="spacer"></div>
-    <a href="/map.html" style="text-decoration:none;"><button class="btn-sm" style="background:#f0fdf4;color:#15803d;">🗺 방문일정</button></a>
-    <a href="/admin.html" style="text-decoration:none;"><button class="btn-sm" style="background:#fefce8;color:#a16207;">⚙ 관리자</button></a>
-    <button class="btn-sm btn-logout" onclick="logout()">로그아웃</button>
-  </div>
-
-  <div class="body">
-    <!-- 사이드바 -->
-    <div class="sidebar">
-      <div class="filters">
-        <input type="text" id="search-input" placeholder="🔍  학교명 검색..." oninput="applyFilters()">
-        <div class="filters-row">
-          <select id="filter-teacher" onchange="applyFilters()">
-            <option value="">전체 담당자</option>
-          </select>
-          <select id="filter-region" onchange="applyFilters()">
-            <option value="">전체 지역</option>
-          </select>
-        </div>
+<div class="body">
+  <!-- 사이드바 -->
+  <div class="sidebar">
+    <div class="filters">
+      <input type="text" id="search-input" placeholder="🔍  학교명 검색..." oninput="applyFilters()">
+      <div class="filters-row">
+        <select id="filter-teacher" onchange="applyFilters()">
+          <option value="">전체 담당자</option>
+        </select>
+        <select id="filter-region" onchange="applyFilters()">
+          <option value="">전체 지역</option>
+        </select>
       </div>
-      <div class="school-list" id="school-list"></div>
     </div>
+    <div class="school-list" id="school-list"></div>
+  </div>
 
-    <!-- 지도 -->
-    <div style="position:relative;flex:1;">
-      <div id="map" style="width:100%;height:100%;"></div>
-      <div id="legend"><h3>담당자</h3><div id="legend-items"></div></div>
-    </div>
+  <!-- 지도 -->
+  <div style="position:relative;flex:1;">
+    <div id="map" style="width:100%;height:100%;"></div>
+    <div id="legend"><h3>담당자</h3><div id="legend-items"></div></div>
   </div>
 </div>
 
-<!-- 편집 패널 -->
-<div id="edit-panel">
-  <div class="edit-header">
-    <div class="dot-lg" id="edit-dot"></div>
-    <h2 id="edit-name">-</h2>
+<!-- 정보/편집 패널 -->
+<div id="info-panel">
+  <div class="panel-header">
+    <div class="dot-lg" id="panel-dot"></div>
+    <h2 id="panel-name">-</h2>
     <button class="btn-close" onclick="closePanel()">✕</button>
   </div>
-  <div class="edit-body">
+  <div class="panel-body">
     <div class="info-row">
       <div class="info-label">지역</div>
-      <div class="info-value" id="edit-region">-</div>
+      <div class="info-value" id="panel-region">-</div>
     </div>
     <div class="info-row">
       <div class="info-label">주소</div>
-      <div class="info-value" id="edit-addr" style="font-size:12px;color:#475569;">-</div>
+      <div class="info-value" id="panel-addr" style="font-size:12px;color:#475569;">-</div>
     </div>
     <div class="info-row">
-      <div class="info-label">현재 담당자</div>
-      <div class="info-value" id="edit-current">-</div>
+      <div class="info-label">담당자</div>
+      <div class="info-value" id="panel-teacher">-</div>
     </div>
   </div>
-  <div class="edit-footer">
+  <!-- 관리자만 보임 -->
+  <div class="edit-footer" id="edit-footer" style="display:none;">
     <div class="info-label" style="margin-bottom:6px;">담당자 변경</div>
     <select class="teacher-select" id="teacher-select"></select>
     <button class="btn-save" onclick="saveTeacher()">저장</button>
     <div class="save-ok" id="save-ok"></div>
+  </div>
+</div>
+
+<!-- 관리자 비번 모달 -->
+<div id="admin-modal">
+  <div class="modal-box">
+    <h3>관리자 모드</h3>
+    <p>비밀번호를 입력하세요</p>
+    <input type="password" id="modal-pw" placeholder="비밀번호"
+      onkeydown="if(event.key==='Enter')confirmAdmin()">
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="closeModal()">취소</button>
+      <button class="btn-confirm" onclick="confirmAdmin()">확인</button>
+    </div>
+    <div class="modal-err" id="modal-err"></div>
   </div>
 </div>
 
@@ -221,13 +225,11 @@ let TOKEN = '';
 let allSchools = [];
 let filtered = [];
 let markers = {};
-let openInfoWindow = null;
 let selectedName = null;
 let map = null;
 let teacherColors = {};
 let allTeachers = [];
 
-// ── 색상 생성 ──────────────────────────────────────
 const COLORS = [
   '#e74c3c','#e67e22','#f1c40f','#2ecc71','#1abc9c',
   '#3498db','#9b59b6','#e91e63','#00bcd4','#8bc34a',
@@ -249,30 +251,50 @@ function getColor(teacher) {
   return teacherColors[primary];
 }
 
-// ── 로그인 ──────────────────────────────────────────
-async function doLogin() {
-  const pw = document.getElementById('pw-input').value;
-  const err = document.getElementById('login-err');
-  err.textContent = '';
+// ── 관리자 모달 ──────────────────────────────────────
+function toggleAdmin() {
+  if (TOKEN) {
+    // 이미 로그인 → 로그아웃
+    TOKEN = '';
+    document.getElementById('btn-admin').textContent = '🔐 관리';
+    document.getElementById('btn-admin').classList.remove('on');
+    document.getElementById('edit-footer').style.display = 'none';
+    return;
+  }
+  document.getElementById('modal-pw').value = '';
+  document.getElementById('modal-err').textContent = '';
+  document.getElementById('admin-modal').classList.add('show');
+  setTimeout(() => document.getElementById('modal-pw').focus(), 50);
+}
+
+async function confirmAdmin() {
+  const pw = document.getElementById('modal-pw').value;
+  document.getElementById('modal-err').textContent = '';
   try {
     const r = await fetch('/api/admin/login', {
       method: 'POST', headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ password: pw })
     });
-    if (!r.ok) { err.textContent = '비밀번호가 틀렸습니다.'; return; }
+    if (!r.ok) { document.getElementById('modal-err').textContent = '비밀번호가 틀렸습니다.'; return; }
     TOKEN = pw;
-    document.getElementById('login-screen').style.display = 'none';
-    document.getElementById('main').style.display = 'flex';
-    await loadData();
-  } catch(e) { err.textContent = '서버 연결 오류'; }
+    closeModal();
+    document.getElementById('btn-admin').textContent = '🔓 관리 중';
+    document.getElementById('btn-admin').classList.add('on');
+    // 패널이 열려있으면 편집 버튼 표시
+    if (document.getElementById('info-panel').classList.contains('open')) {
+      document.getElementById('edit-footer').style.display = 'block';
+    }
+  } catch(e) { document.getElementById('modal-err').textContent = '서버 연결 오류'; }
 }
 
-function logout() {
-  TOKEN = '';
-  document.getElementById('login-screen').style.display = 'flex';
-  document.getElementById('main').style.display = 'none';
-  document.getElementById('pw-input').value = '';
+function closeModal() {
+  document.getElementById('admin-modal').classList.remove('show');
 }
+
+// 모달 바깥 클릭 시 닫기
+document.getElementById('admin-modal').addEventListener('click', e => {
+  if (e.target === document.getElementById('admin-modal')) closeModal();
+});
 
 // ── 데이터 로드 ──────────────────────────────────────
 async function loadData() {
@@ -280,11 +302,8 @@ async function loadData() {
   const data = await r.json();
   const lists = ['this_week_gangnam','this_week_bangwha','unvisited_gangnam','unvisited_bangwha'];
   const raw = lists.flatMap(k => (data[k] || []).map(s => ({...s, _list: k})));
-
-  // promo_teacher가 있는 학교만 (홍보배정 학교)
   allSchools = raw.filter(s => s.promo_teacher && s.promo_teacher.trim());
 
-  // 담당자/지역 추출
   const teacherSet = new Set();
   const regionSet = new Set();
   allSchools.forEach(s => {
@@ -293,33 +312,28 @@ async function loadData() {
   });
   allTeachers = [...teacherSet].sort();
 
-  // 필터 옵션
   const tSel = document.getElementById('filter-teacher');
   tSel.innerHTML = '<option value="">전체 담당자</option>';
   allTeachers.forEach(t => { const o = document.createElement('option'); o.value = t; o.textContent = t; tSel.appendChild(o); });
 
   const rSel = document.getElementById('filter-region');
   rSel.innerHTML = '<option value="">전체 지역</option>';
-  [...regionSet].sort().forEach(r => { const o = document.createElement('option'); o.value = r; o.textContent = r; rSel.appendChild(o); });
+  [...regionSet].sort().forEach(reg => { const o = document.createElement('option'); o.value = reg; o.textContent = reg; rSel.appendChild(o); });
 
-  // 담당자 선택 옵션
   const tSel2 = document.getElementById('teacher-select');
   tSel2.innerHTML = '<option value="">담당자 없음</option>';
   allTeachers.forEach(t => { const o = document.createElement('option'); o.value = t; o.textContent = t; tSel2.appendChild(o); });
 
-  // 통계
   document.getElementById('stat-total').textContent = allSchools.length + '개 학교';
   document.getElementById('stat-teachers').textContent = allTeachers.length + '명 담당';
 
-  // 색상 미리 할당
   allTeachers.forEach(t => getColor(t));
-
   initMap(data.meta);
   applyFilters();
   buildLegend();
 }
 
-// ── 지도 초기화 ──────────────────────────────────────
+// ── 지도 ────────────────────────────────────────────
 function initMap(meta) {
   const center = new kakao.maps.LatLng(meta.school_lat, meta.school_lon);
   map = new kakao.maps.Map(document.getElementById('map'), { center, level: 9 });
@@ -328,38 +342,40 @@ function initMap(meta) {
 }
 
 function placeMarkers() {
-  // 기존 마커 제거
   Object.values(markers).forEach(m => m.setMap(null));
   markers = {};
-
   allSchools.forEach(school => {
     const pos = new kakao.maps.LatLng(school.lat, school.lon);
-    const color = getColor(school.promo_teacher);
-    const svg = makeSVG(color);
-    const img = new kakao.maps.MarkerImage(
-      'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg),
-      new kakao.maps.Size(22, 28),
-      { offset: new kakao.maps.Point(11, 28) }
-    );
-    const marker = new kakao.maps.Marker({ position: pos, image: img, map });
-    kakao.maps.event.addListener(marker, 'click', () => openEdit(school.name));
+    const marker = new kakao.maps.Marker({
+      position: pos,
+      image: makeMarkerImg(getColor(school.promo_teacher)),
+      map
+    });
+    kakao.maps.event.addListener(marker, 'click', () => {
+      openPanel(school.name);
+      map.panTo(pos);
+    });
     markers[school.name] = marker;
   });
 }
 
-function makeSVG(color) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28">
+function makeMarkerImg(color) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28">
     <path d="M11 0C4.9 0 0 4.9 0 11c0 8.3 11 17 11 17s11-8.7 11-17C22 4.9 17.1 0 11 0z" fill="${color}" stroke="white" stroke-width="1.5"/>
     <circle cx="11" cy="11" r="4.5" fill="white" opacity="0.85"/>
   </svg>`;
+  return new kakao.maps.MarkerImage(
+    'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg),
+    new kakao.maps.Size(22, 28),
+    { offset: new kakao.maps.Point(11, 28) }
+  );
 }
 
-// ── 필터링 ───────────────────────────────────────────
+// ── 필터 ────────────────────────────────────────────
 function applyFilters() {
   const q = document.getElementById('search-input').value.toLowerCase();
   const ft = document.getElementById('filter-teacher').value;
   const fr = document.getElementById('filter-region').value;
-
   filtered = allSchools.filter(s => {
     if (q && !s.name.toLowerCase().includes(q)) return false;
     if (ft && !s.promo_teacher.includes(ft)) return false;
@@ -369,15 +385,15 @@ function applyFilters() {
     }
     return true;
   });
-
   renderList();
-  updateMarkerVisibility();
+  const vis = new Set(filtered.map(s => s.name));
+  Object.entries(markers).forEach(([n, m]) => m.setMap(vis.has(n) ? map : null));
 }
 
 function renderList() {
   const list = document.getElementById('school-list');
   list.innerHTML = '';
-  if (filtered.length === 0) {
+  if (!filtered.length) {
     list.innerHTML = '<div style="padding:20px;text-align:center;color:#94a3b8;font-size:13px;">검색 결과 없음</div>';
     return;
   }
@@ -385,67 +401,58 @@ function renderList() {
     const div = document.createElement('div');
     div.className = 'school-item' + (s.name === selectedName ? ' active' : '');
     div.dataset.name = s.name;
-    const color = getColor(s.promo_teacher);
     div.innerHTML = `
-      <div class="dot" style="background:${color}"></div>
+      <div class="dot" style="background:${getColor(s.promo_teacher)}"></div>
       <div class="school-info">
         <div class="school-name">${s.name}</div>
         <div class="school-teacher">${s.promo_teacher || '미배정'}</div>
         <div class="school-region">${s.region || ''}</div>
       </div>`;
     div.addEventListener('click', () => {
-      openEdit(s.name);
+      openPanel(s.name);
       if (markers[s.name]) map.panTo(markers[s.name].getPosition());
     });
     list.appendChild(div);
   });
 }
 
-function updateMarkerVisibility() {
-  const visibleNames = new Set(filtered.map(s => s.name));
-  Object.entries(markers).forEach(([name, marker]) => {
-    marker.setMap(visibleNames.has(name) ? map : null);
-  });
-}
-
-// ── 편집 패널 ─────────────────────────────────────────
-function openEdit(name) {
+// ── 정보 패널 ─────────────────────────────────────────
+function openPanel(name) {
   const school = allSchools.find(s => s.name === name);
   if (!school) return;
   selectedName = name;
 
-  const color = getColor(school.promo_teacher);
-  document.getElementById('edit-dot').style.background = color;
-  document.getElementById('edit-name').textContent = school.name;
-  document.getElementById('edit-region').textContent = school.region || '-';
-  document.getElementById('edit-addr').textContent = school.addr || '-';
-  document.getElementById('edit-current').textContent = school.promo_teacher || '미배정';
+  document.getElementById('panel-dot').style.background = getColor(school.promo_teacher);
+  document.getElementById('panel-name').textContent = school.name;
+  document.getElementById('panel-region').textContent = school.region || '-';
+  document.getElementById('panel-addr').textContent = school.addr || '-';
+  document.getElementById('panel-teacher').textContent = school.promo_teacher || '미배정';
   document.getElementById('save-ok').textContent = '';
 
-  // 담당자 선택 동기화 (현재 담당자의 첫 번째 이름)
-  const primary = (school.promo_teacher || '').split(',')[0].trim();
-  document.getElementById('teacher-select').value = primary;
+  // 관리자일 때만 편집 영역 표시
+  document.getElementById('edit-footer').style.display = TOKEN ? 'block' : 'none';
+  if (TOKEN) {
+    const primary = (school.promo_teacher || '').split(',')[0].trim();
+    document.getElementById('teacher-select').value = primary;
+  }
 
-  document.getElementById('edit-panel').classList.add('open');
-
-  // 목록 하이라이트
-  document.querySelectorAll('.school-item').forEach(el => {
-    el.classList.toggle('active', el.dataset.name === name);
-  });
+  document.getElementById('info-panel').classList.add('open');
+  document.querySelectorAll('.school-item').forEach(el =>
+    el.classList.toggle('active', el.dataset.name === name));
 }
 
 function closePanel() {
-  document.getElementById('edit-panel').classList.remove('open');
+  document.getElementById('info-panel').classList.remove('open');
   selectedName = null;
   document.querySelectorAll('.school-item').forEach(el => el.classList.remove('active'));
 }
 
+// ── 담당자 저장 ──────────────────────────────────────
 async function saveTeacher() {
-  if (!selectedName) return;
+  if (!selectedName || !TOKEN) return;
   const newTeacher = document.getElementById('teacher-select').value;
   const btn = document.querySelector('.btn-save');
   btn.disabled = true; btn.textContent = '저장 중...';
-
   try {
     const r = await fetch('/api/admin/promo/' + encodeURIComponent(selectedName), {
       method: 'PUT',
@@ -453,23 +460,12 @@ async function saveTeacher() {
       body: JSON.stringify({ promo_teacher: newTeacher })
     });
     if (!r.ok) throw new Error();
-
-    // 로컬 데이터 업데이트
     const school = allSchools.find(s => s.name === selectedName);
     if (school) {
       school.promo_teacher = newTeacher;
-      document.getElementById('edit-current').textContent = newTeacher || '미배정';
-      document.getElementById('edit-dot').style.background = getColor(newTeacher);
-      // 마커 색상 업데이트
-      if (markers[selectedName]) {
-        const svg = makeSVG(getColor(newTeacher));
-        const img = new kakao.maps.MarkerImage(
-          'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg),
-          new kakao.maps.Size(22, 28),
-          { offset: new kakao.maps.Point(11, 28) }
-        );
-        markers[selectedName].setImage(img);
-      }
+      document.getElementById('panel-teacher').textContent = newTeacher || '미배정';
+      document.getElementById('panel-dot').style.background = getColor(newTeacher);
+      if (markers[selectedName]) markers[selectedName].setImage(makeMarkerImg(getColor(newTeacher)));
     }
     renderList();
     buildLegend();
@@ -482,22 +478,19 @@ async function saveTeacher() {
   }
 }
 
-// ── 범례 ─────────────────────────────────────────────
+// ── 범례 ────────────────────────────────────────────
 function buildLegend() {
   const container = document.getElementById('legend-items');
   container.innerHTML = '';
-  // 현재 데이터 기준 담당자 수 집계
   const counts = {};
   allSchools.forEach(s => {
     const p = (s.promo_teacher || '').split(',')[0].trim();
     if (p) counts[p] = (counts[p] || 0) + 1;
   });
   Object.entries(counts).sort((a,b) => b[1]-a[1]).forEach(([t, cnt]) => {
-    const color = getColor(t);
     const div = document.createElement('div');
     div.className = 'legend-item';
-    div.innerHTML = `<div class="legend-dot" style="background:${color}"></div><span>${t} (${cnt})</span>`;
-    div.style.cursor = 'pointer';
+    div.innerHTML = `<div class="legend-dot" style="background:${getColor(t)}"></div><span>${t} (${cnt})</span>`;
     div.addEventListener('click', () => {
       document.getElementById('filter-teacher').value = t;
       applyFilters();
@@ -506,9 +499,7 @@ function buildLegend() {
   });
 }
 
-document.getElementById('pw-input').addEventListener('keydown', e => {
-  if (e.key === 'Enter') doLogin();
-});
+loadData();
 </script>
 </body>
 </html>
