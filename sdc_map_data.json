@@ -4803,9 +4803,9 @@
     {
       "name": "예일여자중학교",
       "type": "unvisited_bangwha",
-      "lat": 37.6109459,
-      "lon": 126.9147928,
-      "addr": "서울특별시 은평구 연서로 117",
+      "lat": 37.5547121,
+      "lon": 126.7404299,
+      "addr": "인천광역시 계양구 장제로995번길 39",
       "dist_from_school": 9.52,
       "region": "서울_서북",
       "promo_teacher": "김정희"
@@ -4993,9 +4993,9 @@
     {
       "name": "한가람중학교",
       "type": "unvisited_bangwha",
-      "lat": 37.73115198,
-      "lon": 126.7564238,
-      "addr": "경기도 파주시 금바위로 77",
+      "lat": 37.6489815,
+      "lon": 126.623433,
+      "addr": "경기도 김포시 김포한강9로 140",
       "dist_from_school": 18.03,
       "region": "서울_강서양천",
       "promo_teacher": "김다희"
