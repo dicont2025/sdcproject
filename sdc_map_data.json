@@ -4678,7 +4678,7 @@
       "addr": "인천광역시 계양구 아나지로85번길 12",
       "dist_from_school": 11.49,
       "region": "인천",
-      "promo_teacher": "김정희"
+      "promo_teacher": ""
     },
     {
       "name": "용산중학교",
@@ -4801,7 +4801,7 @@
       "promo_teacher": ""
     },
     {
-      "name": "예일여자중학교",
+      "name": "예일중학교",
       "type": "unvisited_bangwha",
       "lat": 37.5547121,
       "lon": 126.7404299,
