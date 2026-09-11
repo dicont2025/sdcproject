@@ -146,8 +146,9 @@ body { font-family: 'Malgun Gothic', sans-serif; background: #f1f5f9; color: #1e
   <span class="stat-badge" id="stat-total">로딩 중...</span>
   <span class="stat-badge" id="stat-teachers" style="background:#f0fdf4;color:#15803d;"></span>
   <div class="spacer"></div>
-  <a href="/applicants-map.html" style="text-decoration:none;"><button class="btn-sm" style="background:#fdf4ff;color:#7e22ce;">📊 지원자 분포</button></a>
+  <a href="/applicants-map.html" style="text-decoration:none;"><button class="btn-sm" style="background:#fdf4ff;color:#7e22ce;">📊 SDC 대회 지원자 분포</button></a>
   <a href="/map.html" style="text-decoration:none;"><button class="btn-sm" style="background:#f0fdf4;color:#15803d;">🗺 방문일정</button></a>
+  <a href="/promo-admin.html" id="btn-table" style="display:none;text-decoration:none;"><button class="btn-sm" style="background:#eff6ff;color:#1d4ed8;">📋 배정표</button></a>
   <button class="btn-sm btn-admin" id="btn-admin" onclick="toggleAdmin()">🔐 관리</button>
 </div>
 
@@ -259,6 +260,7 @@ function toggleAdmin() {
     TOKEN = '';
     document.getElementById('btn-admin').textContent = '🔐 관리';
     document.getElementById('btn-admin').classList.remove('on');
+    document.getElementById('btn-table').style.display = 'none';
     document.getElementById('edit-footer').style.display = 'none';
     return;
   }
@@ -281,7 +283,7 @@ async function confirmAdmin() {
     closeModal();
     document.getElementById('btn-admin').textContent = '🔓 관리 중';
     document.getElementById('btn-admin').classList.add('on');
-    // 패널이 열려있으면 편집 버튼 표시
+    document.getElementById('btn-table').style.display = 'inline';
     if (document.getElementById('info-panel').classList.contains('open')) {
       document.getElementById('edit-footer').style.display = 'block';
     }
@@ -389,6 +391,7 @@ function applyFilters() {
   renderList();
   const vis = new Set(filtered.map(s => s.name));
   Object.entries(markers).forEach(([n, m]) => m.setMap(vis.has(n) ? map : null));
+  if (selectedName && !vis.has(selectedName)) closePanel();
 }
 
 function renderList() {
@@ -488,10 +491,10 @@ function buildLegend() {
     const p = (s.promo_teacher || '').split(',')[0].trim();
     if (p) counts[p] = (counts[p] || 0) + 1;
   });
-  Object.entries(counts).sort((a,b) => b[1]-a[1]).forEach(([t, cnt]) => {
+  Object.entries(counts).sort((a,b) => a[0].localeCompare(b[0], 'ko')).forEach(([t]) => {
     const div = document.createElement('div');
     div.className = 'legend-item';
-    div.innerHTML = `<div class="legend-dot" style="background:${getColor(t)}"></div><span>${t} (${cnt})</span>`;
+    div.innerHTML = `<div class="legend-dot" style="background:${getColor(t)}"></div><span>${t}</span>`;
     div.addEventListener('click', () => {
       document.getElementById('filter-teacher').value = t;
       applyFilters();

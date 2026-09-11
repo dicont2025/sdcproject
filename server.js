@@ -126,12 +126,15 @@ app.delete('/api/admin/schools/:name', adminAuth, (req, res) => {
 // ── promo teacher assignment ──────────────────────────
 app.put('/api/admin/promo/:name', adminAuth, (req, res) => {
   const name = decodeURIComponent(req.params.name);
-  const { promo_teacher } = req.body;
+  const { promo_teacher, addr, lat, lon } = req.body;
   const data = JSON.parse(fs.readFileSync(MAP_FILE, 'utf-8'));
   const found = findSchool(data, name);
   if (!found) return res.status(404).json({ error: '학교 없음' });
   const { list, idx } = found;
-  data[list][idx].promo_teacher = (promo_teacher || '').trim();
+  if (promo_teacher !== undefined) data[list][idx].promo_teacher = (promo_teacher || '').trim();
+  if (addr !== undefined) data[list][idx].addr = addr.trim();
+  if (lat !== undefined && !isNaN(parseFloat(lat))) data[list][idx].lat = parseFloat(lat);
+  if (lon !== undefined && !isNaN(parseFloat(lon))) data[list][idx].lon = parseFloat(lon);
   fs.writeFileSync(MAP_FILE, JSON.stringify(data, null, 2), 'utf-8');
   res.json({ ok: true });
 });

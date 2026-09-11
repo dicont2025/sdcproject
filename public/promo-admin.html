@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>홍보배정 배정표</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Malgun Gothic', sans-serif; background: #f1f5f9; color: #1e293b; min-height: 100vh; }
+
+/* 로그인 */
+#login-screen {
+  position: fixed; inset: 0; background: #1e3a8a;
+  display: flex; align-items: center; justify-content: center; z-index: 999;
+}
+.login-box {
+  background: white; border-radius: 16px; padding: 36px; width: 300px; text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,.3);
+}
+.login-box h1 { font-size: 18px; font-weight: 800; color: #1e3a8a; margin-bottom: 4px; }
+.login-box p { font-size: 12px; color: #64748b; margin-bottom: 20px; }
+.login-box input {
+  width: 100%; padding: 9px 12px; border: 1.5px solid #e2e8f0;
+  border-radius: 8px; font-size: 14px; margin-bottom: 10px;
+  outline: none; text-align: center; letter-spacing: 2px;
+}
+.login-box input:focus { border-color: #1e3a8a; }
+.btn-login {
+  width: 100%; padding: 10px; background: #1e3a8a; color: white;
+  border: none; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.btn-login:hover { background: #1e40af; }
+.login-err { color: #dc2626; font-size: 12px; margin-top: 8px; min-height: 16px; }
+
+#main { display: none; }
+
+/* 상단 */
+.topbar {
+  background: white; border-bottom: 2px solid #1e3a8a;
+  padding: 8px 20px; display: flex; align-items: center; gap: 10px;
+  position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 8px rgba(0,0,0,.07);
+}
+.topbar h1 { font-size: 15px; font-weight: 800; color: #1e3a8a; }
+.spacer { flex: 1; }
+.btn-sm {
+  padding: 5px 12px; border-radius: 6px; border: none;
+  cursor: pointer; font-size: 12px; font-weight: 700;
+}
+
+/* 필터 바 */
+.filterbar {
+  background: white; border-bottom: 1px solid #e2e8f0;
+  padding: 8px 20px; display: flex; align-items: center; gap: 8px;
+  position: sticky; top: 42px; z-index: 40;
+}
+.filterbar input, .filterbar select {
+  padding: 6px 10px; border: 1.5px solid #e2e8f0; border-radius: 6px;
+  font-size: 12px; outline: none; font-family: inherit;
+}
+.filterbar input { width: 200px; }
+.filterbar input:focus, .filterbar select:focus { border-color: #3b82f6; }
+.count-badge {
+  background: #eff6ff; color: #1d4ed8; border-radius: 20px;
+  padding: 3px 10px; font-size: 12px; font-weight: 700; margin-left: auto;
+}
+
+/* 테이블 */
+.table-wrap { padding: 12px 20px 40px; }
+table { width: 100%; border-collapse: collapse; background: white;
+  border-radius: 10px; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,.07); font-size: 13px; }
+thead tr { background: #1e3a8a; color: white; }
+thead th { padding: 9px 10px; text-align: left; font-size: 12px; font-weight: 700; white-space: nowrap; }
+tbody tr { border-bottom: 1px solid #f1f5f9; transition: background .1s; }
+tbody tr:hover { background: #f8fafc; }
+tbody td { padding: 6px 10px; vertical-align: middle; }
+
+.td-no { color: #94a3b8; font-size: 11px; width: 36px; text-align: center; }
+.td-region { font-size: 11px; color: #64748b; width: 64px; }
+.td-name { font-weight: 700; width: 130px; }
+.td-color { width: 10px; padding: 0 4px; }
+.color-dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+
+/* 편집 인풋 */
+.cell-input {
+  width: 100%; padding: 4px 7px; border: 1.5px solid transparent;
+  border-radius: 5px; font-size: 12px; font-family: inherit; background: transparent;
+  outline: none; transition: border-color .15s, background .15s;
+}
+.cell-input:hover { border-color: #cbd5e1; background: #f8fafc; }
+.cell-input:focus { border-color: #3b82f6; background: white; }
+.cell-select {
+  width: 100%; padding: 4px 6px; border: 1.5px solid transparent;
+  border-radius: 5px; font-size: 12px; font-family: inherit; background: transparent;
+  outline: none; cursor: pointer;
+}
+.cell-select:hover { border-color: #cbd5e1; background: #f8fafc; }
+.cell-select:focus { border-color: #3b82f6; background: white; }
+
+.td-addr { min-width: 200px; }
+.td-coord { width: 100px; }
+.coord-wrap { display: flex; gap: 3px; }
+.coord-input {
+  width: 100%; padding: 4px 5px; border: 1.5px solid transparent;
+  border-radius: 4px; font-size: 11px; font-family: monospace; background: transparent;
+  outline: none;
+}
+.coord-input:hover { border-color: #cbd5e1; background: #f8fafc; }
+.coord-input:focus { border-color: #3b82f6; background: white; }
+
+.td-save { width: 52px; text-align: center; }
+.btn-row-save {
+  padding: 4px 8px; background: #1e3a8a; color: white;
+  border: none; border-radius: 5px; font-size: 11px; font-weight: 700;
+  cursor: pointer; white-space: nowrap;
+}
+.btn-row-save:hover { background: #1e40af; }
+.btn-row-save:disabled { background: #94a3b8; cursor: default; }
+.save-cell { font-size: 11px; color: #16a34a; text-align: center; }
+
+/* 변경된 행 표시 */
+tbody tr.dirty { background: #fefce8; }
+tbody tr.dirty:hover { background: #fef9c3; }
+</style>
+</head>
+<body>
+
+<div id="login-screen">
+  <div class="login-box">
+    <h1>홍보배정 배정표</h1>
+    <p>관리자 비밀번호를 입력하세요</p>
+    <input type="password" id="pw-input" placeholder="비밀번호" onkeydown="if(event.key==='Enter')doLogin()">
+    <button class="btn-login" onclick="doLogin()">로그인</button>
+    <div class="login-err" id="login-err"></div>
+  </div>
+</div>
+
+<div id="main">
+  <div class="topbar">
+    <h1>📋 홍보배정 배정표</h1>
+    <div class="spacer"></div>
+    <a href="/" style="text-decoration:none;"><button class="btn-sm" style="background:#f0fdf4;color:#15803d;">← 지도로</button></a>
+    <button class="btn-sm" style="background:#f1f5f9;color:#64748b;" onclick="logout()">로그아웃</button>
+  </div>
+
+  <div class="filterbar">
+    <input type="text" id="search" placeholder="🔍 학교명 검색..." oninput="applyFilter()">
+    <select id="f-region" onchange="applyFilter()"><option value="">전체 지역</option></select>
+    <select id="f-teacher" onchange="applyFilter()"><option value="">전체 담당자</option></select>
+    <span class="count-badge" id="count-badge">0개</span>
+  </div>
+
+  <div class="table-wrap">
+    <table id="tbl">
+      <thead>
+        <tr>
+          <th class="td-no">No.</th>
+          <th class="td-color"></th>
+          <th class="td-region">지역구</th>
+          <th class="td-name">학교명</th>
+          <th style="min-width:120px">담당자</th>
+          <th class="td-addr">주소</th>
+          <th class="td-coord">위도</th>
+          <th class="td-coord">경도</th>
+          <th class="td-save">저장</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+let TOKEN = '';
+let allSchools = [];
+let allTeachers = [];
+const teacherColors = {};
+const COLORS = [
+  '#e74c3c','#e67e22','#2ecc71','#1abc9c','#3498db','#9b59b6',
+  '#e91e63','#00bcd4','#8bc34a','#ff5722','#607d8b','#ff9800',
+  '#4caf50','#2196f3','#9c27b0','#009688','#673ab7','#03a9f4',
+  '#8d6e63','#ffc107','#ff6b6b','#48dbfb','#feca57','#54a0ff',
+  '#5f27cd','#00d2d3','#1dd1a1','#ee5a24','#0652dd','#9980fa','#fd9644'
+];
+function getColor(t) {
+  if (!t) return '#94a3b8';
+  const p = t.split(',')[0].trim();
+  if (!teacherColors[p]) {
+    teacherColors[p] = COLORS[Object.keys(teacherColors).length % COLORS.length];
+  }
+  return teacherColors[p];
+}
+
+async function doLogin() {
+  const pw = document.getElementById('pw-input').value;
+  const err = document.getElementById('login-err');
+  err.textContent = '';
+  try {
+    const r = await fetch('/api/admin/login', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ password: pw })
+    });
+    if (!r.ok) { err.textContent = '비밀번호가 틀렸습니다.'; return; }
+    TOKEN = pw;
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('main').style.display = 'block';
+    await loadData();
+  } catch(e) { err.textContent = '서버 연결 오류'; }
+}
+function logout() {
+  TOKEN = '';
+  document.getElementById('login-screen').style.display = 'flex';
+  document.getElementById('main').style.display = 'none';
+  document.getElementById('pw-input').value = '';
+}
+
+async function loadData() {
+  const r = await fetch('/api/mapdata');
+  const data = await r.json();
+  const lists = ['this_week_gangnam','this_week_bangwha','unvisited_gangnam','unvisited_bangwha'];
+  allSchools = lists.flatMap(k => (data[k]||[]).map(s=>({...s,_list:k})))
+    .filter(s => s.promo_teacher && s.promo_teacher.trim());
+
+  const tSet = new Set(), rSet = new Set();
+  allSchools.forEach(s => {
+    if (s.promo_teacher) s.promo_teacher.split(',').forEach(t => tSet.add(t.trim()));
+    if (s.region) rSet.add(s.region.split('_')[1] || s.region);
+  });
+  allTeachers = [...tSet].sort();
+  allTeachers.forEach(t => getColor(t));
+
+  const ft = document.getElementById('f-teacher');
+  allTeachers.forEach(t => { const o=document.createElement('option'); o.value=t; o.textContent=t; ft.appendChild(o); });
+
+  const fr = document.getElementById('f-region');
+  [...rSet].sort().forEach(r => { const o=document.createElement('option'); o.value=r; o.textContent=r; fr.appendChild(o); });
+
+  applyFilter();
+}
+
+function applyFilter() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const ft = document.getElementById('f-teacher').value;
+  const fr = document.getElementById('f-region').value;
+  const filtered = allSchools.filter(s => {
+    if (q && !s.name.toLowerCase().includes(q)) return false;
+    if (ft && !s.promo_teacher.includes(ft)) return false;
+    if (fr) {
+      const reg = s.region ? (s.region.split('_')[1]||s.region) : '';
+      if (reg !== fr) return false;
+    }
+    return true;
+  });
+  document.getElementById('count-badge').textContent = filtered.length + '개';
+  renderTable(filtered);
+}
+
+function renderTable(schools) {
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+  schools.forEach((s, i) => {
+    const color = getColor(s.promo_teacher);
+    const tr = document.createElement('tr');
+    tr.dataset.name = s.name;
+
+    // teacher options
+    const teacherOpts = allTeachers.map(t =>
+      `<option value="${t}" ${s.promo_teacher && s.promo_teacher.split(',')[0].trim()===t ? 'selected':''}>  ${t}</option>`
+    ).join('');
+
+    tr.innerHTML = `
+      <td class="td-no">${i+1}</td>
+      <td class="td-color"><span class="color-dot" style="background:${color}"></span></td>
+      <td class="td-region">${s.region ? (s.region.split('_')[1]||s.region) : '-'}</td>
+      <td class="td-name">${s.name}</td>
+      <td>
+        <select class="cell-select" data-field="promo_teacher" onchange="markDirty(this)">
+          <option value="">-</option>${teacherOpts}
+        </select>
+      </td>
+      <td class="td-addr">
+        <input class="cell-input" data-field="addr" value="${s.addr||''}" oninput="markDirty(this)" placeholder="주소 입력...">
+      </td>
+      <td class="td-coord">
+        <input class="coord-input" data-field="lat" value="${s.lat||''}" oninput="markDirty(this)" placeholder="위도">
+      </td>
+      <td class="td-coord">
+        <input class="coord-input" data-field="lon" value="${s.lon||''}" oninput="markDirty(this)" placeholder="경도">
+      </td>
+      <td class="td-save">
+        <button class="btn-row-save" onclick="saveRow(this)">저장</button>
+      </td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+function markDirty(el) {
+  el.closest('tr').classList.add('dirty');
+}
+
+async function saveRow(btn) {
+  const tr = btn.closest('tr');
+  const name = tr.dataset.name;
+  const fields = tr.querySelectorAll('[data-field]');
+  const body = {};
+  fields.forEach(f => { body[f.dataset.field] = f.value; });
+
+  btn.disabled = true; btn.textContent = '...';
+  try {
+    const r = await fetch('/api/admin/promo/' + encodeURIComponent(name), {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json', 'x-admin-token': TOKEN },
+      body: JSON.stringify(body)
+    });
+    if (!r.ok) throw new Error();
+    tr.classList.remove('dirty');
+    btn.textContent = '✓';
+    btn.style.background = '#16a34a';
+    // 로컬 데이터 업데이트
+    const school = allSchools.find(s => s.name === name);
+    if (school) {
+      school.promo_teacher = body.promo_teacher || '';
+      school.addr = body.addr || '';
+      if (body.lat) school.lat = parseFloat(body.lat);
+      if (body.lon) school.lon = parseFloat(body.lon);
+      // 담당자 바뀌면 색상 dot 업데이트
+      tr.querySelector('.color-dot').style.background = getColor(school.promo_teacher);
+    }
+    setTimeout(() => { btn.textContent = '저장'; btn.style.background = ''; btn.disabled = false; }, 1500);
+  } catch(e) {
+    alert('저장 실패');
+    btn.textContent = '저장'; btn.disabled = false;
+  }
+}
+
+document.getElementById('pw-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') doLogin();
+});
+</script>
+</body>
+</html>
