@@ -243,7 +243,7 @@ function applyFilter() {
   const fr = document.getElementById('f-region').value;
   const filtered = allSchools.filter(s => {
     if (q && !s.name.toLowerCase().includes(q)) return false;
-    if (ft && !s.promo_teacher.includes(ft)) return false;
+    if (ft && !s.promo_teacher.split(',').map(t=>t.trim()).includes(ft)) return false;
     if (fr) {
       const reg = s.region ? (s.region.split('_')[1]||s.region) : '';
       if (reg !== fr) return false;
